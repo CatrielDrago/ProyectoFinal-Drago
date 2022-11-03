@@ -1,0 +1,705 @@
+@import "./variables";
+
+@media screen and (max-width: 1090px){
+    main .hero .heroContenedor .heroImg a img{
+        height: 285px;
+        padding-bottom: 10px;
+    }
+    main .hero .heroContenedor{
+        height: 470px;
+    }
+    main .hero .heroContenedor .heroTitulo h1{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1075px) {
+    main .contenedorCardAdultos{
+        height: 1700px;
+    }
+
+    main .contenedorCardAdultos .contenedorCardAGrid{
+        height: 1500px;
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: auto;
+    }
+
+    main .contenedorCardAdultos .contenedorCardAGrid .cardA3{
+        grid-column: 1/2;
+    }
+
+    main .contenedorCardAdultos .contenedorCardAGrid .cardA4{
+        grid-column: 2/3;
+    }
+
+    main .contenedorCardAdultos .contenedorCardAGrid .cardA5{
+        grid-column:1/2;
+    }
+
+    main .contenedorCardAdultos .contenedorCardAGrid .cardA6{
+        grid-column:2/3;
+    }
+
+    main .contenedorNinios{
+        height: 1700px;
+    }
+    main .contenedorNinios .contenedorCardNGrid{
+        height: 1500px;
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: auto;
+    }
+
+    main .contenedorNinios .contenedorCardNGrid .cardN3{
+        grid-column: 1/2;
+    }
+    main .contenedorNinios .contenedorCardNGrid .cardN4{
+        grid-column: 2/3;
+    }
+    main .contenedorNinios .contenedorCardNGrid .cardN5{
+        grid-column:1/2;
+    }
+    main .contenedorNinios .contenedorCardNGrid .cardN6{
+        grid-column:2/3;
+    }
+
+    main .contenedorAccesorios{
+        height: 1700px;
+    }
+    main .contenedorAccesorios .contenedorCardAcGrid{
+        height: 1500px;
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: auto;
+    }
+
+    main .contenedorAccesorios .contenedorCardAcGrid .cardAc3{
+        grid-column: 1/2;
+    }
+    main .contenedorAccesorios .contenedorCardAcGrid .cardAc4{
+        grid-column: 2/3;
+    }
+    main .contenedorAccesorios .contenedorCardAcGrid .cardAc5{
+        grid-column:1/2;
+    }
+    main .contenedorAccesorios .contenedorCardAcGrid .cardAc6{
+        grid-column:2/3;
+    }
+
+    main .formulario .formularioPresentacion{
+        width: 450px;
+    }
+
+    main .formulario .formularioContenedor{
+        width: 430px;
+    }
+
+    main .formulario .formularioContenedor form{
+        width: 430px;
+    }
+
+    main .formulario .formularioContenedor form .formularioNAE{
+        width: 350px
+    }
+
+    main .formulario .formularioContenedor form
+.formularioSexo{
+    width: 350px;
+}
+
+main .formulario .formularioContenedor form .formularioMensaje{
+    width: 350px;
+}
+
+footer .contenedorFooter .contenedorMapa{
+    width: 50%;
+}
+
+    footer .contenedorFooter .contenedorMapa iframe{
+        width: 350px;
+    }
+
+    footer .contenedorFooter .contenedorMapa h2{
+        font-size: 26px;
+    }
+
+    footer .contenedorFooter .contenedorRedesNew{
+        width: 500px;
+    }
+
+    footer .contenedorFooter .contenedorRedesNew .newsletter form{
+        width: 500px;
+    }
+
+    footer .contenedorFooter .contenedorRedesNew .redesSociales{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    main .tiendaContenedor .tiendaImg1{
+        width: 650px;
+    }
+    
+    main .tiendaContenedor .tiendaImg2{
+        width: 650px;
+    }
+
+    main .formulario .formularioPresentacion{
+        width: 380px;
+    }  
+    main .formulario .formularioPresentacion .formularioPresentacionRedes{
+        width: 350px;
+    }
+    main .formulario .formularioPresentacion .formularioPresentacionRedes .formularioPresentacionRedesIconos{
+        width: 350px;
+    }
+
+    main .formulario .formularioContenedor{
+        width: 380px;
+    }
+
+    main .formulario .formularioContenedor form{
+        width: 380px;
+    }
+
+    footer .contenedorFooter .contenedorMapa iframe{
+        width: 340px;
+    }
+
+    footer .contenedorFooter .contenedorMapa h2{
+        font-size: 24px;
+    }
+
+    footer .contenedorFooter .contenedorRedesNew{
+        width: 450px;
+    }
+
+    footer .contenedorFooter .contenedorRedesNew .newsletter form{
+        width: 450px;
+    }
+
+    footer .contenedorFooter .contenedorRedesNew .redesSociales{
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    main .formulario .formularioPresentacion{
+        width: 300px;
+    } 
+    
+    main .formulario .formularioPresentacion .formularioPresentacionImg{
+        @include tamanio (250px, 250px);
+    }
+    main .formulario .formularioPresentacion .formularioPresentacionImg img{
+        @include tamanio (200px, 200px);
+    }
+
+    main .formulario .formularioPresentacion .formularioPresentacionRedes{
+        width: 280px;
+    }
+
+    main .formulario .formularioPresentacion .formularioPresentacionRedes h2{
+        font-size: 26px;
+
+    }
+
+    main .formulario .formularioPresentacion .formularioPresentacionRedes .formularioPresentacionRedesIconos{
+        width: 280px;
+        @include flex (flex, center, center, column);
+    }
+
+    main .formulario .formularioPresentacion .formularioPresentacionRedes .formularioPresentacionRedesIconos a img{
+        @include tamanio (44px, 44px);
+    }
+
+    main .contenedorCardAdultos .contenedorCardAGrid div{
+        @include tamanio (300px, 400px);
+    }
+
+    main .contenedorCardAdultos .contenedorCardAGrid div img{
+        @include tamanio (295px, 240px);
+    }
+    
+    main .contenedorCardAdultos .contenedorCardAGrid div p{
+        font-size: 12px;
+    }
+
+    main .contenedorNinios .contenedorCardNGrid div{
+        @include tamanio (300px, 400px);
+    }
+
+    main .contenedorNinios .contenedorCardNGrid div img{
+        @include tamanio (295px, 240px);
+    }
+    
+    main .contenedorNinios .contenedorCardNGrid div p{
+        font-size: 12px;
+    }
+
+    main .contenedorAccesorios .contenedorCardAcGrid div{
+        @include tamanio (300px, 400px);
+    }
+
+    main .contenedorAccesorios .contenedorCardAcGrid div img{
+        @include tamanio (295px, 240px);
+    }
+    
+    main .contenedorAccesorios .contenedorCardAcGrid div p{
+        font-size: 12px;
+    }
+
+    footer .contenedorFooter .contenedorMapa iframe{
+        @include tamanio (340px, 200px);
+    }
+
+    footer .contenedorFooter .contenedorRedesNew{
+        width: 350px;
+    }
+
+    footer .contenedorFooter .contenedorRedesNew .newsletter form{
+        width: 350px;
+    }
+
+    footer .contenedorFooter .contenedorRedesNew .redesSociales{
+        width: 350px;
+    }
+
+    footer .contenedorFooter .contenedorRedesNew .redesSociales .iconosFooter a img{
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    footer .contenedorFooter .contenedorRedesNew .newsletter form .emailNewsletter{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    main .formulario .formularioContenedor{
+        width: 55%;
+    }
+
+    main .formulario .formularioPresentacion{
+        width: 40%;
+    }
+
+    main .formulario .formularioPresentacion .formularioPresentacionRedes .formularioPresentacionRedesIconos{
+        width: 200px;
+    }
+
+    footer .contenedorFooter .contenedorMapa iframe{
+        @include tamanio (280px, 200px);
+    }
+
+    footer .contenedorFooter .contenedorMapa h2{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    main .tiendaContenedor .tiendaImg1{
+        width: 600px;
+        
+    }
+    
+    main .tiendaContenedor .tiendaImg2{
+        width: 600px;
+    } 
+
+    main .formulario{
+        height: 1300px;
+        flex-direction: column;
+    }
+
+    main .formulario .formularioPresentacion{
+        flex-direction: row;
+        width: 95%;
+        height: 300px;
+    } 
+    
+    main .formulario .formularioPresentacion .formularioPresentacionImg{
+        @include tamanio (250px, 250px);
+    }
+    main .formulario .formularioPresentacion .formularioPresentacionImg img{
+        @include tamanio (200px, 200px);
+    }
+
+    main .formulario .formularioPresentacion .formularioPresentacionRedes{
+        width: 280px;
+        justify-content: center;
+    }
+
+    main .formulario .formularioPresentacion .formularioPresentacionRedes h2{
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+
+    main .formulario .formularioPresentacion .formularioPresentacionRedes .formularioPresentacionRedesIconos{
+        @include flex (flex, center, center, row);
+        @include tamanio (200px, 100px);
+    }
+
+    main .formulario .formularioPresentacion .formularioPresentacionRedes .formularioPresentacionRedesIconos a img{
+        @include tamanio (44px, 44px);
+    }
+
+    main .formulario .formularioContenedor{
+        width: 95%;
+    }
+
+    footer .contenedorFooter{
+        @include tamanio (100%, 800px);
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 650px){
+    main .contenedorCardAdultos .contenedorCardAGrid div{
+        @include tamanio (250px, 400px);
+    }
+
+    main .contenedorCardAdultos .contenedorCardAGrid div img{
+        @include tamanio (245px, 240px);
+    }
+
+    main .contenedorNinios .contenedorCardNGrid div{
+        @include tamanio (250px, 400px);
+    }
+
+    main .contenedorNinios .contenedorCardNGrid div img{
+        @include tamanio (245px, 240px);
+    }
+
+    main .contenedorAccesorios .contenedorCardAcGrid div{
+        @include tamanio (250px, 400px);
+    }
+
+    main .contenedorAccesorios .contenedorCardAcGrid div h3{
+        font-size: 16px;
+    }
+
+    main .contenedorAccesorios .contenedorCardAcGrid div img{
+        @include tamanio (245px, 240px);
+    }
+}
+
+@media screen and (max-width: 600px){
+    main .hero .heroContenedor .heroImg a img{
+        height: 250px;
+    }
+    main .hero .heroContenedor .heroTitulo h1{
+        font-size: 25px;
+    }
+    main .hero .heroContenedor .heroTitulo .heroLinks a{
+        font-size: 14px;
+    }
+    main .tiendaContenedor .tiendaImg1{
+        width: 480px;
+        align-items: center;
+    }
+    
+    main .tiendaContenedor .tiendaImg2{
+        width: 480px;
+    }
+
+    main .novedades .novedadesContenedor h2{
+        padding: 3px 3px;
+        bottom: 689px;
+    }
+    
+    main .novedades .novedadesContenedor div{
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width: 599px){
+    main .novedades .novedadesContenedor h2{
+        bottom: 677px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    main .contenedorCardAdultos .contenedorCardAGrid div{
+        @include tamanio (200px, 350px);
+    }
+
+    main .contenedorCardAdultos .contenedorCardAGrid div h3{
+        font-size: 10px;
+    }
+
+    main .contenedorCardAdultos .contenedorCardAGrid div img{
+        @include tamanio (198px, 185px);
+    }
+
+    main .contenedorNinios .contenedorCardNGrid div{
+        @include tamanio (200px, 350px);
+    }
+
+    main .contenedorNinios .contenedorCardNGrid div h3{
+        font-size: 10px;
+        height: 5%;
+        margin: 5px 0px;
+    }
+
+    main .contenedorNinios .contenedorCardNGrid div p{
+        height: 25%;
+    }
+
+    main .contenedorNinios .contenedorCardNGrid div img{
+        @include tamanio (198px, 60%);
+    }
+
+    main .contenedorNinios .contenedorCardNGrid div a{
+        height: 10%;
+    }
+    
+    main .contenedorAccesorios .contenedorCardAcGrid div{
+        @include tamanio (200px, 350px);
+    }
+
+    main .contenedorAccesorios .contenedorCardAcGrid div h3{
+        font-size: 10px;
+    }
+
+    main .contenedorAccesorios .contenedorCardAcGrid div img{
+        @include tamanio (198px, 200px);
+    }
+
+    main .formulario .formularioPresentacion .formularioPresentacionImg{
+        @include tamanio (200px, 200px);
+    }
+    main .formulario .formularioPresentacion .formularioPresentacionImg  img{
+        @include tamanio (150px, 150px);
+    }
+
+    footer .contenedorFooter .contenedorMapa{
+        width: 100%;
+    }
+
+    footer .contenedorFooter .contenedorMapa h2{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    main .tiendaContenedor{
+        flex-direction: row;
+        padding: 5px;
+        gap: 5px;
+
+    }
+    
+    main .tiendaContenedor .tiendaImg1{
+        @include tamanio (50%, 480px);
+    }
+
+    main .tiendaContenedor .tiendaImg1 h2{
+        font-size: 22px;
+    }
+
+    main .tiendaContenedor .tiendaImg2{
+        @include tamanio (50%, 480px);
+        width: 50%;
+        height: 480px;
+    }
+
+    main .tiendaContenedor .tiendaImg2 h2{
+        font-size: 22px;
+    }
+
+    main .formulario .formularioContenedor form{
+        width: 98%;
+    }
+
+    main .formulario .formularioContenedor form .formularioNAE{
+        width: 95%;
+    }
+
+    main .formulario .formularioContenedor form .formularioNAE label{
+        font-size: 16px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    main .hero .heroContenedor{
+        height: 470px;
+    }
+    main .hero .heroContenedor .heroTitulo h1{
+        font-size: 20px;
+    }
+    
+    main .novedades{
+        height: 1500px;
+    }
+
+    main .novedades .novedadesContenedor{
+        height: 1400px;
+    }
+
+    main .novedades .novedadesContenedor div{
+        margin-left: 30px;
+    }
+
+    main .novedades .novedadesContenedor h2{
+        bottom: 1375px;
+    }
+
+    main .contenedorCardAdultos{
+        height: 2600px;
+    }
+
+    main .contenedorCardAdultos .contenedorCardAGrid{
+        height: 2350px;
+        grid-template-columns: 1fr;
+
+    }
+
+    main .contenedorCardAdultos .contenedorCardAGrid .cardA1{
+        grid-column: 1/2;
+    }
+
+    main .contenedorCardAdultos .contenedorCardAGrid .cardA2{
+        grid-column: 1/2;
+    }
+
+    main .contenedorCardAdultos .contenedorCardAGrid .cardA3{
+        grid-column: 1/2;
+    }
+
+    main .contenedorCardAdultos .contenedorCardAGrid .cardA4{
+        grid-column: 1/2;
+    }
+
+    main .contenedorCardAdultos .contenedorCardAGrid .cardA5{
+        grid-column:1/2;
+    }
+
+    main .contenedorCardAdultos .contenedorCardAGrid .cardA6{
+        grid-column:1/2;
+    }
+
+    main .contenedorNinios{
+        height: 2600px;
+    }
+
+    main .contenedorNinios .contenedorCardNGrid{
+        height: 2350px;
+        grid-template-columns: 1fr;
+
+    }
+
+    main .contenedorNinios .contenedorCardNGrid .cardN1{
+        grid-column: 1/2;
+    }
+
+    main .contenedorNinios .contenedorCardNGrid .cardN2{
+        grid-column: 1/2;
+    }
+
+    main .contenedorNinios .contenedorCardNGrid .cardN3{
+        grid-column: 1/2;
+    }
+
+    main .contenedorNinios .contenedorCardNGrid .cardN4{
+        grid-column: 1/2;
+    }
+
+    main .contenedorNinios .contenedorCardNGrid .cardN5{
+        grid-column:1/2;
+    }
+
+    main .contenedorNinios .contenedorCardNGrid .cardN6{
+        grid-column:1/2;
+    }
+
+    main .contenedorAccesorios{
+        height: 2600px;
+    }
+
+    main .contenedorAccesorios .contenedorCardAcGrid{
+        height: 2350px;
+        grid-template-columns: 1fr;
+        
+    }
+
+    main .contenedorAccesorios .contenedorCardAcGrid .cardAc1{
+        grid-column: 1/2;
+    }
+
+    main .contenedorAccesorios .contenedorCardAcGrid .cardAc2{
+        grid-column: 1/2;
+    }
+
+    main .contenedorAccesorios .contenedorCardAcGrid .cardAc3{
+        grid-column: 1/2;
+    }
+
+    main .contenedorAccesorios .contenedorCardAcGrid .cardAc4{
+        grid-column: 1/2;
+    }
+
+    main .contenedorAccesorios .contenedorCardAcGrid .cardAc5{
+        grid-column:1/2;
+    }
+    
+    main .contenedorAccesorios .contenedorCardAcGrid .cardAc6{
+        grid-column:1/2;
+    }
+
+    main .formulario .formularioPresentacion {
+        @include flex (flex, center, center, column);
+    }
+
+    main .formulario .formularioPresentacion .formularioPresentacionImg{
+        @include tamanio (140px, 140px);
+    }
+    main .formulario .formularioPresentacion .formularioPresentacionImg img{
+        @include tamanio (100px, 120px);
+    }
+
+    main .formulario .formularioPresentacion .formularioPresentacionRedes{
+        height: 40%;
+    }
+
+    main .formulario .formularioPresentacion .formularioPresentacionRedes h2{
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+
+    main .formulario .formularioPresentacion .formularioPresentacionRedes .formularioPresentacionRedesIconos{
+        @include tamanio (150px, 64px);
+    }
+
+    main .formulario .formularioPresentacion .formularioPresentacionRedes .formularioPresentacionRedesIconos a img{
+        @include tamanio (34px, 34px);
+    }
+    
+    main .formulario .formularioPresentacion .formularioPresentacionRedes .formularioPresentacionRedesIconos a{
+        margin: 0 5px 0 0;
+    }
+}
+
+@media screen and (max-width: 400px){
+    main .hero .heroContenedor .heroTitulo .heroLinks a{
+        font-size: 12px ;
+    }
+    
+    main .formulario .formularioContenedor form .formularioNAE input{
+        @include tamanio (200px, 25px);
+    }
+
+    main .formulario .formularioContenedor form .formularioSexo{
+        width: 90%;
+    }
+
+    main .formulario .formularioContenedor form .formularioSexo .formularioSexoOpciones label{
+        font-size: 16px;
+    }
+
+    main .formulario .formularioContenedor form .formularioMensaje{
+        width: 90%;
+    }
+
+}

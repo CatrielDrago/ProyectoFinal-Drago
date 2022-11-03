@@ -1,0 +1,85 @@
+@import "../base/variables";
+footer{
+    .contenedorFooter{
+        @include flex (flex, space-around, center, row);
+        @include tamanio (100%, 350px);
+        background-color: #000;
+        background-image: linear-gradient( rgba(0, 0, 0, 0.87), rgba(0, 0, 0,0.7)), url(../img/patronnovedades.jpg);
+        border-top: 2px solid rgba(255, 255, 255, 0.144);
+        .contenedorMapa{
+            @include flex (flex, space-around, center, column);
+            @include tamanio (600px, 300px);
+            h2{
+                color: $color-principal;
+                text-transform: uppercase;
+                font-size: 30px;
+            }
+            iframe{
+                @include tamanio (400px, 300px);
+            }
+            p{
+                color: $color-principal;
+                text-transform: uppercase;
+                font-size: 15px;
+            }
+        }
+        .contenedorRedesNew{
+            @include flex (flex, center, center, column);
+            @include tamanio (600px, 350px);
+            .newsletter{
+                form{
+                    @include flex(flex, center, center, column);
+                    @include tamanio (600px, 200px);
+                    h2{
+                        color: $color-principal;
+                        text-transform: uppercase;
+                        font-size: 30px;
+                        margin-bottom: 10px;
+                    }
+                    .emailNewsletter{
+                        @include tamanio (300px, 30px);
+                    }
+                    .enviarNewsletter{
+                        @include tamanio (100px, 30px);
+                        background-color: $color-principal;
+                        color: $color-secundario;
+                        margin-top: 30px;
+                    }
+                }
+            }
+            .redesSociales{
+                @include flex (flex, center, center, column);
+                @include tamanio (600px, 150px);
+                h2{
+                    color: $color-principal;
+                    text-transform: uppercase;
+                    font-size: 30px;
+                    margin-bottom: 10px;
+                }
+                .iconosFooter{
+                    a{
+                        img{
+                            @include tamanio (54px, 54px);
+                            margin-left:  20px;
+                            transition: 1s linear;
+                            &:hover{
+                                transform: scale(1.2);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .derechosReservados{
+        @include flex (flex, center, center, row);
+        @include tamanio (100%, 40px);
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.830), rgba(0, 0, 0, 0.830));
+        p{
+            color: $color-principal;
+            text-transform: uppercase;
+            font-size: 14px;
+            margin: 0px;
+        }
+    }
+}

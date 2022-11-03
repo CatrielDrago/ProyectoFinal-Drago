@@ -1,0 +1,143 @@
+@import "../base/variables";
+
+.animate__animated.animate__backInDown{
+    --animate-duration: 2s;
+}
+
+main{
+    .hero{
+        @include flex (flex, center, center,row);
+        @include tamanio (100%, calc(100vh - 100px));
+        background-image: url(../img/fondeheader.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        .heroContenedor{
+            @include flex (flex, center, center, column);
+            @include tamanio (100%, 557px);
+            .heroImg{
+                a{
+                    img{
+                        height: 350px;
+                    }
+                }
+            }
+            .heroTitulo{
+                @include flex (flex, center, center, column);
+                padding-bottom: 100px;
+                h1{
+                    font-size:  35px;
+                    color: $color-secundario;
+                    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+                    text-transform: uppercase;
+                }
+                .heroLinks{
+                    margin-top: 5px;
+                    a{
+                        margin-left: 25px;
+                        background-color: $color-principal;
+                        padding: 5px 10px;
+                        color: $color-secundario;
+                        font-size: 18px;
+                        box-shadow: 10px 11px 5px 0px rgba(0,0,0,0.75);
+                        -webkit-box-shadow: 10px 11px 5px 0px rgba(0,0,0,0.75);
+                        -moz-box-shadow: 10px 11px 5px 0px rgba(0,0,0,0.75);
+                        text-transform: uppercase;
+                        border-radius: 8px;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    .tiendaContenedor{
+        @include flex (flex, space-around, center, column);
+        @include tamanio (100%, 500px);
+        background-image: linear-gradient( rgba(0, 0, 0,0.5), rgba(0, 0, 0, 0.819)), url(../img/patronnovedades.jpg);
+        .tiendaImg1{
+            @include flex (flex, center, center, row);
+            @include tamanio (1000px, 200px);
+            border: 2px solid $color-secundario;
+            background-image: url(../img/imagentienda1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            h2{
+                color: $color-secundario;
+                font-size: 30px;
+                text-transform: uppercase;
+                text-shadow: 4px 4px 2px rgba(0,0,0,0.705);
+            }
+        }
+        .tiendaImg2{
+            @include flex (flex, center, center, row);
+            @include tamanio (1000px, 200px);
+            border: 2px solid $color-secundario;
+            background-image: url(../img/imagentienda1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            h2{
+                color: $color-secundario;
+                font-size: 30px;
+                text-transform: uppercase;
+                text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.705);
+            }
+        }
+    }
+    .novedades{
+        @include flex (flex, center, center, row);
+        @include tamanio (100%, 1000px);
+        background-color:  #000;
+
+        .novedadesContenedor{
+            @include flex (flex, space-around, center, row);
+            @include tamanio (100%, 700px);
+            flex-wrap: wrap;
+            background-color: $color-Terciario;
+            position: relative;
+            h2{
+                position: absolute;
+                bottom: 675px;
+                left: 1%;
+                color:  $color-secundario;
+                background-color: $color-Terciario;
+                padding: 10px 10px;
+                text-transform: uppercase;
+            }
+            div{
+                @include flex (flex, space-between, center, column);
+                @include tamanio (200px, 300px);
+                background-color: $color-secundario;
+                border: 1px solid #000000;
+                box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+                -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+                background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.212));
+                transition: 1s linear;
+                &:hover{
+                    transform: scale(1.1);
+                }
+                img{
+                    @include tamanio(198px, 190px);
+                    border-bottom: 1px solid #000;
+                }
+                h3{
+                    text-transform: uppercase;
+                    font-size: 16px;
+                    color: $color-principal;
+                }
+                a{
+                    padding: 5px 5px;
+                    margin-bottom: 5px;
+                    background-color: $color-principal;
+                    color: $color-secundario;
+                    border-radius: 8px;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,107 @@
+main{
+    .anuncioDeEstacionVerano{
+        @include flex (flex, center, center,row);
+        @include tamanio (100%, calc(100vh - 100px));
+        background-image:linear-gradient( rgba(0, 0, 0, 0.233), rgba(3, 0, 0, 0.137)), url(../img/verano.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        border-bottom: 1px solid $color-secundario;
+        .contenedorAnuncioDeEstacionVerano{
+            h1{
+                font-size: 56px;
+                color: $color-secundario;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .contenedorNinios{
+        @include flex (flex, center, center, column);
+        @include tamanio (100%, 1400px);
+        background-color: #0000;
+        background-image: linear-gradient( rgba(0, 0, 0, 0.856), rgba(0, 0, 0, 0.753)), url(../img/patronnovedades.jpg); 
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        .tituloCardN{
+            @include flex (flex, center, center, row);
+            @include tamanio (100%, 100px);
+            position: absolute;
+            top: 50px;
+            h2{
+                text-transform: uppercase;
+                color: $color-secundario;
+                background-color: $color-cuaternario;
+                font-size: 45px;
+                padding: 10px 20px;
+                background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.212));
+            }
+        }
+        .contenedorCardNGrid{
+            display: grid;
+            @include tamanio (100%, 1200px);
+            grid-template-columns: repeat(3,1fr);
+            grid-auto-rows: auto;
+            background-color: $color-cuaternario ;
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.212));
+            column-gap: 10px;
+            justify-items: center;
+            align-items: center;
+            div{
+                @include flex (flex, space-around, center, column);
+                background-color: $color-secundario;
+                border: map-get($cards, cardBorde);
+                width: map-get($cards, cardW);
+                height: map-get($cards, cardH);
+                box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+                -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+                background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.212));
+                transition: 1s linear;
+                &:hover{
+                    transform: scale(1.1);
+                }
+                img{
+                    @include tamanio (340px, 60%);
+                }
+                h3{
+                    text-transform: uppercase;
+                    font-size: 16px;
+                    color: $color-principal;
+                }
+                p{
+                    padding: 0 20px;
+                    margin-bottom: 0;
+
+                }
+                a{
+                    padding: 4px 20px;
+                    margin: 5px 0px;
+                    background-color: $color-principal;
+                    color: $color-secundario;
+                    border-radius: 8px;
+                    text-decoration: none;
+                }
+            }
+            .cardN1{
+                grid-column: 1/2;
+                
+            }
+            .cardN2{
+                grid-column: 2/3;
+            }
+            .cardN3{
+                grid-column: 3/4;
+            }
+            .cardN4{
+                grid-column: 1/2;
+            }
+            .cardN5{
+                grid-column: 2/3;
+            }
+            .cardN6{
+                grid-column: 3/4;
+            }
+        }
+    }
+}

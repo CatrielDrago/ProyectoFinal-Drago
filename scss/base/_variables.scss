@@ -1,0 +1,25 @@
+
+$color-principal:#0275d8;
+$color-secundario:#FFFF;
+$color-Terciario: #464a4b93;
+$color-cuaternario:#f6f8f84f;
+
+$cards:(
+    cardW:350px,
+    cardH:430px,
+    cardBorde: 1px solid #0000,
+    );
+
+@mixin flex ($flex, $justify, $align, $direction){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+@mixin tamanio ($width, $height){
+    width: $width;
+    height: $height;
+
+}
+    

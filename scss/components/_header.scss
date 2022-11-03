@@ -1,0 +1,12 @@
+header{
+.navbar {
+    padding: 0;
+    .container-fluid{
+        .navbar-toggler{
+            &:focus{
+                box-shadow: none;
+            }
+        }
+    }
+}
+}
