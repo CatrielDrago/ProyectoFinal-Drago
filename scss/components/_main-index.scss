@@ -113,15 +113,15 @@ main{
                 border-radius: 10px;
             }
         .cardsContenedorNov{
-            @include flex (flex, space-between, none, column);
+            @include flex (flex, space-between, center, column);
             @include tamanio (300px, 300px);
-                background-image: url(../img/patron1.jpg);
+                background-color: rgba(255, 255, 255, 0.034);
                 overflow: hidden;
                 text-align: center;
                 transition: all .4s ease-in-out;
                 border: 1px solid $color-secundario;
                 border-radius: 10px;
-                box-shadow: 0px 10px 25px 0px rgb(0, 0, 0);
+                box-shadow: 0px 30px 30px 0px rgb(0, 0, 0);
                 &:hover{
                 @include tamanio (300px, 450px)
                 }
@@ -131,16 +131,19 @@ main{
                     img{
                         @include tamanio (230px, 230px);
                         border-radius: 8px;
-                        border: 1px solid #000;
+                        border: 2px solid #000;
                         box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.664);
                     }
                 }
                 .tituloCardsNov{
+                    width: 200px;
+                    border-bottom: 2px solid $color-principal;
                     h3{
                         color: $color-principal;
-                        margin: 10px 0 0 0;
+                        margin: 10px 0 5px 0;
                         font-size: 1.5rem;
                         font-weight: bold;
+                        
                         text-transform: uppercase;
                         text-shadow: 2px 1px 0px rgba(0,0,0,0.43);
                     }
