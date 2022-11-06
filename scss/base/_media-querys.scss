@@ -1,5 +1,22 @@
 @import "./variables";
 
+@media screen and (max-width: 1270px){
+    main{
+        .novedades{
+            height: 1100px;
+            .novedadesContenedor{
+                grid-template-columns: repeat(2, 1fr);
+                height: 900px;
+                gap: 5px;
+                h2{
+                    bottom: 875px;
+                    padding: 5px 10px;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 1090px){
     main .hero .heroContenedor .heroImg a img{
         height: 285px;
@@ -298,6 +315,18 @@ footer .contenedorFooter .contenedorMapa{
 }
 
 @media screen and (max-width: 700px){
+    main{
+        .novedades{
+            height: 1900px;
+            .novedadesContenedor{
+                grid-template-columns:  1fr;
+                height: 1600px;
+                h2{
+                    bottom: 1575px;
+                }
+            }
+        }
+    }
     main .tiendaContenedor .tiendaImg1{
         width: 600px;
         
@@ -402,22 +431,8 @@ footer .contenedorFooter .contenedorMapa{
     main .tiendaContenedor .tiendaImg2{
         width: 480px;
     }
-
-    main .novedades .novedadesContenedor h2{
-        padding: 3px 3px;
-        bottom: 689px;
-    }
-    
-    main .novedades .novedadesContenedor div{
-        margin-left: 5px;
-    }
 }
 
-@media screen and (max-width: 599px){
-    main .novedades .novedadesContenedor h2{
-        bottom: 677px;
-    }
-}
 
 @media screen and (max-width: 550px){
     main .contenedorCardAdultos .contenedorCardAGrid div{
@@ -530,26 +545,6 @@ footer .contenedorFooter .contenedorMapa{
         font-size: 20px;
     }
     
-    main .novedades{
-        height: 1500px;
-    }
-
-    main .novedades .novedadesContenedor{
-        height: 1400px;
-    }
-
-    main .novedades .novedadesContenedor div{
-        margin-left: 30px;
-    }
-
-    main .novedades .novedadesContenedor h2{
-        bottom: 1375px;
-    }
-
-    main .contenedorCardAdultos{
-        height: 2600px;
-    }
-
     main .contenedorCardAdultos .contenedorCardAGrid{
         height: 2350px;
         grid-template-columns: 1fr;

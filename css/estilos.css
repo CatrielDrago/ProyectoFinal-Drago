@@ -139,7 +139,7 @@ main .novedades {
       flex-direction: column;
       width: 300px;
       height: 300px;
-      background-color: #f6f8f84f;
+      background-image: url(../img/patron1.jpg);
       overflow: hidden;
       text-align: center;
       transition: all .4s ease-in-out;
@@ -179,6 +179,8 @@ main .novedades {
           border: 1px solid #FFFF;
           padding: 5px 5px;
           box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.911); }
+        main .novedades .novedadesContenedor .cardsContenedorNov .infoCardNov p {
+          color: #FFFF; }
 
 main .anuncioDeEstacionInvierno {
   display: flex;
@@ -742,6 +744,17 @@ footer .derechosReservados {
     font-size: 14px;
     margin: 0px; }
 
+@media screen and (max-width: 1270px) {
+  main .novedades {
+    height: 1100px; }
+    main .novedades .novedadesContenedor {
+      grid-template-columns: repeat(2, 1fr);
+      height: 900px;
+      gap: 5px; }
+      main .novedades .novedadesContenedor h2 {
+        bottom: 875px;
+        padding: 5px 10px; } }
+
 @media screen and (max-width: 1090px) {
   main .hero .heroContenedor .heroImg a img {
     height: 285px;
@@ -922,6 +935,13 @@ footer .derechosReservados {
     font-size: 22px; } }
 
 @media screen and (max-width: 700px) {
+  main .novedades {
+    height: 1900px; }
+    main .novedades .novedadesContenedor {
+      grid-template-columns: 1fr;
+      height: 1600px; }
+      main .novedades .novedadesContenedor h2 {
+        bottom: 1575px; }
   main .tiendaContenedor .tiendaImg1 {
     width: 600px; }
   main .tiendaContenedor .tiendaImg2 {
@@ -995,16 +1015,7 @@ footer .derechosReservados {
     width: 480px;
     align-items: center; }
   main .tiendaContenedor .tiendaImg2 {
-    width: 480px; }
-  main .novedades .novedadesContenedor h2 {
-    padding: 3px 3px;
-    bottom: 689px; }
-  main .novedades .novedadesContenedor div {
-    margin-left: 5px; } }
-
-@media screen and (max-width: 599px) {
-  main .novedades .novedadesContenedor h2 {
-    bottom: 677px; } }
+    width: 480px; } }
 
 @media screen and (max-width: 550px) {
   main .contenedorCardAdultos .contenedorCardAGrid div {
@@ -1078,16 +1089,6 @@ footer .derechosReservados {
     height: 470px; }
   main .hero .heroContenedor .heroTitulo h1 {
     font-size: 20px; }
-  main .novedades {
-    height: 1500px; }
-  main .novedades .novedadesContenedor {
-    height: 1400px; }
-  main .novedades .novedadesContenedor div {
-    margin-left: 30px; }
-  main .novedades .novedadesContenedor h2 {
-    bottom: 1375px; }
-  main .contenedorCardAdultos {
-    height: 2600px; }
   main .contenedorCardAdultos .contenedorCardAGrid {
     height: 2350px;
     grid-template-columns: 1fr; }
