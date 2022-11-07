@@ -91,7 +91,6 @@ main{
         @include flex (flex, center, center, row);
         @include tamanio (100%, 800px);
         background-color:  #000;
-
         .novedadesContenedor{
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -112,9 +111,9 @@ main{
                 text-transform: uppercase;
                 border-radius: 10px;
             }
-        .cardsContenedorNov{
-            @include flex (flex, space-between, center, column);
-            @include tamanio (300px, 300px);
+            .cardsContenedorNov{
+                @include flex (flex, space-between, center, column);
+                @include tamanio (300px, 300px);
                 background-color: rgba(255, 255, 255, 0.034);
                 overflow: hidden;
                 text-align: center;
@@ -123,7 +122,7 @@ main{
                 border-radius: 10px;
                 box-shadow: 0px 30px 30px 0px rgb(0, 0, 0);
                 &:hover{
-                @include tamanio (300px, 450px)
+                    @include tamanio (300px, 450px)
                 }
                 .cardsEncabezadoNov{
                     @include tamanio (300px, 300px);
@@ -141,7 +140,7 @@ main{
                     h3{
                         color: $color-principal;
                         margin: 10px 0 5px 0;
-                        font-size: 1.5rem;
+                        font-size: 1.5em;
                         font-weight: bold;
                         
                         text-transform: uppercase;
@@ -150,9 +149,13 @@ main{
                 }
                 .infoCardNov{
                     margin: 15px 0;
+                    transition: all .5s ease-in-out;
+                        &:hover{
+                            transform: scale(1.1);
+                        }
                     a{
                         color: $color-secundario;
-                        font-size: 1rem;
+                        font-size: 1em;
                         text-decoration: none;
                         text-transform: uppercase;
                         font-weight: bold;
@@ -164,6 +167,7 @@ main{
                     }
                     p{
                         color: $color-secundario;
+                        padding: 0 15px;
                     }
                 }
             }

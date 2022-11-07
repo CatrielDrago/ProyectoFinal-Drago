@@ -165,15 +165,18 @@ main .novedades {
         main .novedades .novedadesContenedor .cardsContenedorNov .tituloCardsNov h3 {
           color: #0275d8;
           margin: 10px 0 5px 0;
-          font-size: 1.5rem;
+          font-size: 1.5em;
           font-weight: bold;
           text-transform: uppercase;
           text-shadow: 2px 1px 0px rgba(0, 0, 0, 0.43); }
       main .novedades .novedadesContenedor .cardsContenedorNov .infoCardNov {
-        margin: 15px 0; }
+        margin: 15px 0;
+        transition: all .5s ease-in-out; }
+        main .novedades .novedadesContenedor .cardsContenedorNov .infoCardNov:hover {
+          transform: scale(1.1); }
         main .novedades .novedadesContenedor .cardsContenedorNov .infoCardNov a {
           color: #FFFF;
-          font-size: 1rem;
+          font-size: 1em;
           text-decoration: none;
           text-transform: uppercase;
           font-weight: bold;
@@ -183,7 +186,8 @@ main .novedades {
           padding: 5px 5px;
           box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.911); }
         main .novedades .novedadesContenedor .cardsContenedorNov .infoCardNov p {
-          color: #FFFF; }
+          color: #FFFF;
+          padding: 0 15px; }
 
 main .anuncioDeEstacionInvierno {
   display: flex;
@@ -202,90 +206,92 @@ main .anuncioDeEstacionInvierno {
     color: #FFFF;
     text-transform: uppercase; }
 
-main .contenedorCardAdultos {
-  width: 100%;
-  height: 1400px;
+main .buzosAdultos {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  background-color: #0000;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.856), rgba(0, 0, 0, 0.753)), url(../img/patronnovedades.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative; }
-  main .contenedorCardAdultos .tituloCardA {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    width: 100%;
-    height: 100px;
-    position: absolute;
-    top: 50px; }
-    main .contenedorCardAdultos .tituloCardA h2 {
-      text-transform: uppercase;
-      color: #FFFF;
-      background-color: #f6f8f84f;
-      font-size: 45px;
-      padding: 10px 20px;
-      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.212)); }
-  main .contenedorCardAdultos .contenedorCardAGrid {
+  flex-direction: row;
+  width: 100%;
+  height: 1200px;
+  background-color: #000; }
+  main .buzosAdultos .contenedorBuzosA {
     display: grid;
-    width: 100%;
-    height: 1200px;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: auto;
-    background-color: #f6f8f84f;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.212));
-    column-gap: 10px;
     justify-items: center;
-    align-items: center; }
-    main .contenedorCardAdultos .contenedorCardAGrid div {
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    height: 1000px;
+    background-color: #464a4b93;
+    position: relative; }
+    main .buzosAdultos .contenedorBuzosA h2 {
+      font-size: 2.5em;
+      position: absolute;
+      left: 45%;
+      bottom: 975px;
+      color: #FFFF;
+      background-color: #464a4b93;
+      text-transform: uppercase;
+      padding: 10px 20px;
+      border-radius: 10px; }
+    main .buzosAdultos .contenedorBuzosA .cardsBuzosA {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
       flex-direction: column;
-      background-color: #FFFF;
-      border: 1px solid #0000;
       width: 350px;
-      height: 430px;
-      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-      -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.212));
-      transition: 1s linear; }
-      main .contenedorCardAdultos .contenedorCardAGrid div:hover {
-        transform: scale(1.1); }
-      main .contenedorCardAdultos .contenedorCardAGrid div img {
-        width: 340px;
-        height: 270px; }
-      main .contenedorCardAdultos .contenedorCardAGrid div h3 {
-        text-transform: uppercase;
-        font-size: 16px;
-        color: #0275d8; }
-      main .contenedorCardAdultos .contenedorCardAGrid div p {
-        padding: 0 20px;
-        margin-bottom: 0; }
-      main .contenedorCardAdultos .contenedorCardAGrid div a {
-        padding: 4px 20px;
-        margin: 5px 0px;
-        background-color: #0275d8;
-        color: #FFFF;
-        border-radius: 8px;
-        text-decoration: none; }
-    main .contenedorCardAdultos .contenedorCardAGrid .cardA1 {
-      grid-column: 1/2; }
-    main .contenedorCardAdultos .contenedorCardAGrid .cardA2 {
-      grid-column: 2/3; }
-    main .contenedorCardAdultos .contenedorCardAGrid .cardA3 {
-      grid-column: 3/4; }
-    main .contenedorCardAdultos .contenedorCardAGrid .cardA4 {
-      grid-column: 1/2; }
-    main .contenedorCardAdultos .contenedorCardAGrid .cardA5 {
-      grid-column: 2/3; }
-    main .contenedorCardAdultos .contenedorCardAGrid .cardA6 {
-      grid-column: 3/4; }
+      height: 350px;
+      background-color: rgba(255, 255, 255, 0.034);
+      overflow: hidden;
+      text-align: center;
+      transition: all .4s ease-in-out;
+      border: 1px solid #FFFF;
+      border-radius: 10px;
+      box-shadow: 0 30px 30px 0 black; }
+      main .buzosAdultos .contenedorBuzosA .cardsBuzosA:hover {
+        width: 400px;
+        height: 550px; }
+      main .buzosAdultos .contenedorBuzosA .cardsBuzosA .cardsEncabezadoBuzosA {
+        width: 350px;
+        height: 350px;
+        padding: 25px 10px 0 7px; }
+        main .buzosAdultos .contenedorBuzosA .cardsBuzosA .cardsEncabezadoBuzosA img {
+          width: 285px;
+          height: 285px;
+          border-radius: 8px;
+          border: 2px solid #000;
+          box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.664); }
+      main .buzosAdultos .contenedorBuzosA .cardsBuzosA .cardsTituloBuzoA {
+        width: 300px;
+        border-bottom: 2px solid #0275d8; }
+        main .buzosAdultos .contenedorBuzosA .cardsBuzosA .cardsTituloBuzoA h3 {
+          color: #0275d8;
+          margin: 8px 0 8px 0;
+          font-size: 1.2em;
+          font-weight: bold;
+          text-transform: uppercase;
+          text-shadow: 2px 1px 0px rgba(0, 0, 0, 0.43); }
+      main .buzosAdultos .contenedorBuzosA .cardsBuzosA .infoCardsBuzoA {
+        margin: 10px 0 10px 0;
+        transition: all .5s ease-in-out; }
+        main .buzosAdultos .contenedorBuzosA .cardsBuzosA .infoCardsBuzoA:hover {
+          transform: scale(1.1); }
+        main .buzosAdultos .contenedorBuzosA .cardsBuzosA .infoCardsBuzoA a {
+          color: #FFFF;
+          font-size: 1em;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-weight: bold;
+          background-color: #0275d8;
+          border-radius: 5px;
+          border: 1px solid #FFFF;
+          padding: 5px 5px;
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.911); }
+        main .buzosAdultos .contenedorBuzosA .cardsBuzosA .infoCardsBuzoA p {
+          color: #FFFF;
+          padding: 0 15px;
+          font-size: 1em; }
 
 main .anuncioDeEstacionVerano {
   display: flex;
@@ -749,14 +755,54 @@ footer .derechosReservados {
 
 @media screen and (max-width: 1270px) {
   main .novedades {
-    height: 1100px; }
+    height: 1400px; }
     main .novedades .novedadesContenedor {
       grid-template-columns: repeat(2, 1fr);
-      height: 900px;
+      height: 1200px;
       gap: 5px; }
       main .novedades .novedadesContenedor h2 {
-        bottom: 875px;
-        padding: 5px 10px; } }
+        bottom: 1175px;
+        padding: 5px 10px; }
+      main .novedades .novedadesContenedor .cardsContenedorNov {
+        width: 450px;
+        height: 450px; }
+        main .novedades .novedadesContenedor .cardsContenedorNov:hover {
+          width: 450px;
+          height: 600px; }
+        main .novedades .novedadesContenedor .cardsContenedorNov .cardsEncabezadoNov {
+          width: 450px;
+          height: 450px; }
+          main .novedades .novedadesContenedor .cardsContenedorNov .cardsEncabezadoNov img {
+            width: 380px;
+            height: 380px; }
+  main .buzosAdultos {
+    height: 1000px; }
+    main .buzosAdultos .contenedorBuzosA {
+      height: 800px;
+      gap: 0px; }
+      main .buzosAdultos .contenedorBuzosA h2 {
+        bottom: 775px; }
+      main .buzosAdultos .contenedorBuzosA .cardsBuzosA {
+        width: 250px;
+        height: 250px; }
+        main .buzosAdultos .contenedorBuzosA .cardsBuzosA:hover {
+          width: 300px;
+          height: 450px; }
+        main .buzosAdultos .contenedorBuzosA .cardsBuzosA .cardsEncabezadoBuzosA {
+          width: 250px;
+          height: 250px; }
+          main .buzosAdultos .contenedorBuzosA .cardsBuzosA .cardsEncabezadoBuzosA img {
+            width: 185px;
+            height: 185px; }
+        main .buzosAdultos .contenedorBuzosA .cardsBuzosA .cardsTituloBuzoA {
+          width: 250px; }
+          main .buzosAdultos .contenedorBuzosA .cardsBuzosA .cardsTituloBuzoA h3 {
+            font-size: 1em;
+            margin: 10px 0 13px 0; }
+        main .buzosAdultos .contenedorBuzosA .cardsBuzosA .infoCardsBuzoA {
+          width: 250px; }
+          main .buzosAdultos .contenedorBuzosA .cardsBuzosA .infoCardsBuzoA p {
+            font-size: 0.9em; } }
 
 @media screen and (max-width: 1090px) {
   main .hero .heroContenedor .heroImg a img {
@@ -768,20 +814,6 @@ footer .derechosReservados {
     font-size: 30px; } }
 
 @media screen and (max-width: 1075px) {
-  main .contenedorCardAdultos {
-    height: 1700px; }
-  main .contenedorCardAdultos .contenedorCardAGrid {
-    height: 1500px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: auto; }
-  main .contenedorCardAdultos .contenedorCardAGrid .cardA3 {
-    grid-column: 1/2; }
-  main .contenedorCardAdultos .contenedorCardAGrid .cardA4 {
-    grid-column: 2/3; }
-  main .contenedorCardAdultos .contenedorCardAGrid .cardA5 {
-    grid-column: 1/2; }
-  main .contenedorCardAdultos .contenedorCardAGrid .cardA6 {
-    grid-column: 2/3; }
   main .contenedorNinios {
     height: 1700px; }
   main .contenedorNinios .contenedorCardNGrid {
@@ -837,6 +869,18 @@ footer .derechosReservados {
     width: 500px; } }
 
 @media screen and (max-width: 1000px) {
+  main .novedades .novedadesContenedor .cardsContenedorNov {
+    width: 350px;
+    height: 350px; }
+    main .novedades .novedadesContenedor .cardsContenedorNov:hover {
+      width: 350px;
+      height: 500px; }
+    main .novedades .novedadesContenedor .cardsContenedorNov .cardsEncabezadoNov {
+      width: 350px;
+      height: 350px; }
+      main .novedades .novedadesContenedor .cardsContenedorNov .cardsEncabezadoNov img {
+        width: 280px;
+        height: 280px; }
   main .tiendaContenedor .tiendaImg1 {
     width: 650px; }
   main .tiendaContenedor .tiendaImg2 {
@@ -862,6 +906,15 @@ footer .derechosReservados {
   footer .contenedorFooter .contenedorRedesNew .redesSociales {
     width: 450px; } }
 
+@media screen and (max-width: 950px) {
+  main .buzosAdultos {
+    height: 1200px; }
+    main .buzosAdultos .contenedorBuzosA {
+      grid-template-columns: repeat(2, 1fr);
+      height: 1000px; }
+      main .buzosAdultos .contenedorBuzosA h2 {
+        bottom: 975px; } }
+
 @media screen and (max-width: 850px) {
   main .formulario .formularioPresentacion {
     width: 300px; }
@@ -884,14 +937,6 @@ footer .derechosReservados {
   main .formulario .formularioPresentacion .formularioPresentacionRedes .formularioPresentacionRedesIconos a img {
     width: 44px;
     height: 44px; }
-  main .contenedorCardAdultos .contenedorCardAGrid div {
-    width: 300px;
-    height: 400px; }
-  main .contenedorCardAdultos .contenedorCardAGrid div img {
-    width: 295px;
-    height: 240px; }
-  main .contenedorCardAdultos .contenedorCardAGrid div p {
-    font-size: 12px; }
   main .contenedorNinios .contenedorCardNGrid div {
     width: 300px;
     height: 400px; }
@@ -925,6 +970,13 @@ footer .derechosReservados {
     width: 200px; } }
 
 @media screen and (max-width: 750px) {
+  main .novedades {
+    height: 2000px; }
+    main .novedades .novedadesContenedor {
+      grid-template-columns: 1fr;
+      height: 1800px; }
+      main .novedades .novedadesContenedor h2 {
+        bottom: 1775px; }
   main .formulario .formularioContenedor {
     width: 55%; }
   main .formulario .formularioPresentacion {
@@ -938,13 +990,6 @@ footer .derechosReservados {
     font-size: 22px; } }
 
 @media screen and (max-width: 700px) {
-  main .novedades {
-    height: 1900px; }
-    main .novedades .novedadesContenedor {
-      grid-template-columns: 1fr;
-      height: 1600px; }
-      main .novedades .novedadesContenedor h2 {
-        bottom: 1575px; }
   main .tiendaContenedor .tiendaImg1 {
     width: 600px; }
   main .tiendaContenedor .tiendaImg2 {
@@ -986,12 +1031,14 @@ footer .derechosReservados {
     flex-direction: column; } }
 
 @media screen and (max-width: 650px) {
-  main .contenedorCardAdultos .contenedorCardAGrid div {
-    width: 250px;
-    height: 400px; }
-  main .contenedorCardAdultos .contenedorCardAGrid div img {
-    width: 245px;
-    height: 240px; }
+  main .buzosAdultos {
+    height: 2100px; }
+    main .buzosAdultos .contenedorBuzosA {
+      grid-template-columns: 1fr;
+      height: 1900px; }
+      main .buzosAdultos .contenedorBuzosA h2 {
+        bottom: 1885px;
+        left: 38%; }
   main .contenedorNinios .contenedorCardNGrid div {
     width: 250px;
     height: 400px; }
@@ -1021,14 +1068,6 @@ footer .derechosReservados {
     width: 480px; } }
 
 @media screen and (max-width: 550px) {
-  main .contenedorCardAdultos .contenedorCardAGrid div {
-    width: 200px;
-    height: 350px; }
-  main .contenedorCardAdultos .contenedorCardAGrid div h3 {
-    font-size: 10px; }
-  main .contenedorCardAdultos .contenedorCardAGrid div img {
-    width: 198px;
-    height: 185px; }
   main .contenedorNinios .contenedorCardNGrid div {
     width: 200px;
     height: 350px; }
@@ -1092,21 +1131,6 @@ footer .derechosReservados {
     height: 470px; }
   main .hero .heroContenedor .heroTitulo h1 {
     font-size: 20px; }
-  main .contenedorCardAdultos .contenedorCardAGrid {
-    height: 2350px;
-    grid-template-columns: 1fr; }
-  main .contenedorCardAdultos .contenedorCardAGrid .cardA1 {
-    grid-column: 1/2; }
-  main .contenedorCardAdultos .contenedorCardAGrid .cardA2 {
-    grid-column: 1/2; }
-  main .contenedorCardAdultos .contenedorCardAGrid .cardA3 {
-    grid-column: 1/2; }
-  main .contenedorCardAdultos .contenedorCardAGrid .cardA4 {
-    grid-column: 1/2; }
-  main .contenedorCardAdultos .contenedorCardAGrid .cardA5 {
-    grid-column: 1/2; }
-  main .contenedorCardAdultos .contenedorCardAGrid .cardA6 {
-    grid-column: 1/2; }
   main .contenedorNinios {
     height: 2600px; }
   main .contenedorNinios .contenedorCardNGrid {
@@ -1169,6 +1193,18 @@ footer .derechosReservados {
 @media screen and (max-width: 400px) {
   main .hero .heroContenedor .heroTitulo .heroLinks a {
     font-size: 12px; }
+  main .novedades .novedadesContenedor .cardsContenedorNov {
+    width: 300px;
+    height: 300px; }
+    main .novedades .novedadesContenedor .cardsContenedorNov:hover {
+      width: 300px;
+      height: 450px; }
+    main .novedades .novedadesContenedor .cardsContenedorNov .cardsEncabezadoNov {
+      width: 300px;
+      height: 300px; }
+      main .novedades .novedadesContenedor .cardsContenedorNov .cardsEncabezadoNov img {
+        width: 230px;
+        height: 230px; }
   main .formulario .formularioContenedor form .formularioNAE input {
     width: 200px;
     height: 25px; }
