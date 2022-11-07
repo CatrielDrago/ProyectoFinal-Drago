@@ -310,90 +310,92 @@ main .anuncioDeEstacionVerano {
     color: #FFFF;
     text-transform: uppercase; }
 
-main .contenedorNinios {
+main .mallasNinios {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
-  height: 1400px;
-  background-color: #0000;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.856), rgba(0, 0, 0, 0.753)), url(../img/patronnovedades.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative; }
-  main .contenedorNinios .tituloCardN {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    width: 100%;
-    height: 100px;
-    position: absolute;
-    top: 50px; }
-    main .contenedorNinios .tituloCardN h2 {
-      text-transform: uppercase;
-      color: #FFFF;
-      background-color: #f6f8f84f;
-      font-size: 45px;
-      padding: 10px 20px;
-      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.212)); }
-  main .contenedorNinios .contenedorCardNGrid {
+  height: 1200px;
+  background-color: #000; }
+  main .mallasNinios .contenedorMallasN {
     display: grid;
-    width: 100%;
-    height: 1200px;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: auto;
-    background-color: #f6f8f84f;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.212));
-    column-gap: 10px;
     justify-items: center;
-    align-items: center; }
-    main .contenedorNinios .contenedorCardNGrid div {
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    height: 1000px;
+    background-color: #464a4b93;
+    position: relative; }
+    main .mallasNinios .contenedorMallasN h2 {
+      font-size: 2.5em;
+      position: absolute;
+      left: 45%;
+      bottom: 975px;
+      color: #FFFF;
+      background-color: #464a4b93;
+      text-transform: uppercase;
+      padding: 10px 20px;
+      border-radius: 10px; }
+    main .mallasNinios .contenedorMallasN .cardsMallasN {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
       flex-direction: column;
-      background-color: #FFFF;
-      border: 1px solid #0000;
       width: 350px;
-      height: 430px;
-      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-      -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.212));
-      transition: 1s linear; }
-      main .contenedorNinios .contenedorCardNGrid div:hover {
-        transform: scale(1.1); }
-      main .contenedorNinios .contenedorCardNGrid div img {
-        width: 340px;
-        height: 60%; }
-      main .contenedorNinios .contenedorCardNGrid div h3 {
-        text-transform: uppercase;
-        font-size: 16px;
-        color: #0275d8; }
-      main .contenedorNinios .contenedorCardNGrid div p {
-        padding: 0 20px;
-        margin-bottom: 0; }
-      main .contenedorNinios .contenedorCardNGrid div a {
-        padding: 4px 20px;
-        margin: 5px 0px;
-        background-color: #0275d8;
-        color: #FFFF;
-        border-radius: 8px;
-        text-decoration: none; }
-    main .contenedorNinios .contenedorCardNGrid .cardN1 {
-      grid-column: 1/2; }
-    main .contenedorNinios .contenedorCardNGrid .cardN2 {
-      grid-column: 2/3; }
-    main .contenedorNinios .contenedorCardNGrid .cardN3 {
-      grid-column: 3/4; }
-    main .contenedorNinios .contenedorCardNGrid .cardN4 {
-      grid-column: 1/2; }
-    main .contenedorNinios .contenedorCardNGrid .cardN5 {
-      grid-column: 2/3; }
-    main .contenedorNinios .contenedorCardNGrid .cardN6 {
-      grid-column: 3/4; }
+      height: 350px;
+      background-color: rgba(255, 255, 255, 0.034);
+      overflow: hidden;
+      text-align: center;
+      transition: all .4s ease-in-out;
+      border: 1px solid #FFFF;
+      border-radius: 10px;
+      box-shadow: 0 30px 30px 0 black; }
+      main .mallasNinios .contenedorMallasN .cardsMallasN:hover {
+        width: 400px;
+        height: 550px; }
+      main .mallasNinios .contenedorMallasN .cardsMallasN .cardsEncabezadoMallasN {
+        width: 350px;
+        height: 350px;
+        padding: 25px 10px 0 7px; }
+        main .mallasNinios .contenedorMallasN .cardsMallasN .cardsEncabezadoMallasN img {
+          width: 285px;
+          height: 285px;
+          border-radius: 8px;
+          border: 2px solid #000;
+          box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.664); }
+      main .mallasNinios .contenedorMallasN .cardsMallasN .cardsTituloMallasN {
+        width: 300px;
+        border-bottom: 2px solid #0275d8; }
+        main .mallasNinios .contenedorMallasN .cardsMallasN .cardsTituloMallasN h3 {
+          color: #0275d8;
+          margin: 8px 0 8px 0;
+          font-size: 1.2em;
+          font-weight: bold;
+          text-transform: uppercase;
+          text-shadow: 2px 1px 0px rgba(0, 0, 0, 0.43); }
+      main .mallasNinios .contenedorMallasN .cardsMallasN .infoCardsMallasN {
+        margin: 10px 0 10px 0;
+        transition: all .5s ease-in-out; }
+        main .mallasNinios .contenedorMallasN .cardsMallasN .infoCardsMallasN:hover {
+          transform: scale(1.1); }
+        main .mallasNinios .contenedorMallasN .cardsMallasN .infoCardsMallasN a {
+          color: #FFFF;
+          font-size: 1em;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-weight: bold;
+          background-color: #0275d8;
+          border-radius: 5px;
+          border: 1px solid #FFFF;
+          padding: 5px 5px;
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.911); }
+        main .mallasNinios .contenedorMallasN .cardsMallasN .infoCardsMallasN p {
+          color: #FFFF;
+          padding: 0 15px;
+          font-size: 1em; }
 
 main .anuncioDeAccesorios {
   display: flex;
@@ -412,94 +414,92 @@ main .anuncioDeAccesorios {
     color: #FFFF;
     text-transform: uppercase; }
 
-main .contenedorAccesorios {
+main .gorrasAc {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
-  height: 1400px;
-  background-color: #0000;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.856), rgba(0, 0, 0, 0.753)), url(../img/patronnovedades.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative; }
-  main .contenedorAccesorios .tituloCardAc {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    width: 100%;
-    height: 100px;
-    position: absolute;
-    top: 50px; }
-    main .contenedorAccesorios .tituloCardAc h2 {
-      text-transform: uppercase;
-      color: #FFFF;
-      background-color: #f6f8f84f;
-      font-size: 45px;
-      padding: 10px 20px;
-      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.212)); }
-  main .contenedorAccesorios .contenedorCardAcGrid {
+  height: 1200px;
+  background-color: #000; }
+  main .gorrasAc .contenedorGorrasAc {
     display: grid;
-    width: 100%;
-    height: 1200px;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: auto;
-    background-color: #f6f8f84f;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.212));
-    column-gap: 10px;
     justify-items: center;
-    align-items: center; }
-    main .contenedorAccesorios .contenedorCardAcGrid div {
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    height: 1000px;
+    background-color: #464a4b93;
+    position: relative; }
+    main .gorrasAc .contenedorGorrasAc h2 {
+      font-size: 2.5em;
+      position: absolute;
+      left: 45%;
+      bottom: 975px;
+      color: #FFFF;
+      background-color: #464a4b93;
+      text-transform: uppercase;
+      padding: 10px 20px;
+      border-radius: 10px; }
+    main .gorrasAc .contenedorGorrasAc .cardsGorrasAc {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
       flex-direction: column;
-      background-color: #FFFF;
-      border: 1px solid #0000;
       width: 350px;
-      height: 430px;
-      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-      -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.212));
-      transition: 1s linear; }
-      main .contenedorAccesorios .contenedorCardAcGrid div:hover {
-        transform: scale(1.1); }
-      main .contenedorAccesorios .contenedorCardAcGrid div img {
-        width: 340px;
-        height: 60%; }
-      main .contenedorAccesorios .contenedorCardAcGrid div h3 {
-        text-transform: uppercase;
-        font-size: 20px;
-        color: #0275d8;
-        height: 5%;
-        margin: 5px 0px; }
-      main .contenedorAccesorios .contenedorCardAcGrid div p {
-        padding: 0 20px;
-        margin-bottom: 0;
-        height: 25%; }
-      main .contenedorAccesorios .contenedorCardAcGrid div a {
-        padding: 4px 20px;
-        margin: 5px 0px;
-        background-color: #0275d8;
-        color: #FFFF;
-        border-radius: 8px;
-        text-decoration: none;
-        height: 10%; }
-    main .contenedorAccesorios .contenedorCardAcGrid .cardAc1 {
-      grid-column: 1/2; }
-    main .contenedorAccesorios .contenedorCardAcGrid .cardAc2 {
-      grid-column: 2/3; }
-    main .contenedorAccesorios .contenedorCardAcGrid .cardAc3 {
-      grid-column: 3/4; }
-    main .contenedorAccesorios .contenedorCardAcGrid .cardAc4 {
-      grid-column: 1/2; }
-    main .contenedorAccesorios .contenedorCardAcGrid .cardAc5 {
-      grid-column: 2/3; }
-    main .contenedorAccesorios .contenedorCardAcGrid .cardAc6 {
-      grid-column: 3/4; }
+      height: 350px;
+      background-color: rgba(255, 255, 255, 0.034);
+      overflow: hidden;
+      text-align: center;
+      transition: all .4s ease-in-out;
+      border: 1px solid #FFFF;
+      border-radius: 10px;
+      box-shadow: 0 30px 30px 0 black; }
+      main .gorrasAc .contenedorGorrasAc .cardsGorrasAc:hover {
+        width: 400px;
+        height: 550px; }
+      main .gorrasAc .contenedorGorrasAc .cardsGorrasAc .cardsEncabezadoGorrasAc {
+        width: 350px;
+        height: 350px;
+        padding: 25px 10px 0 7px; }
+        main .gorrasAc .contenedorGorrasAc .cardsGorrasAc .cardsEncabezadoGorrasAc img {
+          width: 285px;
+          height: 285px;
+          border-radius: 8px;
+          border: 2px solid #000;
+          box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.664); }
+      main .gorrasAc .contenedorGorrasAc .cardsGorrasAc .cardsTituloGorrasAc {
+        width: 300px;
+        border-bottom: 2px solid #0275d8; }
+        main .gorrasAc .contenedorGorrasAc .cardsGorrasAc .cardsTituloGorrasAc h3 {
+          color: #0275d8;
+          margin: 8px 0 8px 0;
+          font-size: 1.2em;
+          font-weight: bold;
+          text-transform: uppercase;
+          text-shadow: 2px 1px 0px rgba(0, 0, 0, 0.43); }
+      main .gorrasAc .contenedorGorrasAc .cardsGorrasAc .infoCardsGorrasAc {
+        margin: 10px 0 10px 0;
+        transition: all .5s ease-in-out; }
+        main .gorrasAc .contenedorGorrasAc .cardsGorrasAc .infoCardsGorrasAc:hover {
+          transform: scale(1.1); }
+        main .gorrasAc .contenedorGorrasAc .cardsGorrasAc .infoCardsGorrasAc a {
+          color: #FFFF;
+          font-size: 1em;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-weight: bold;
+          background-color: #0275d8;
+          border-radius: 5px;
+          border: 1px solid #FFFF;
+          padding: 5px 5px;
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.911); }
+        main .gorrasAc .contenedorGorrasAc .cardsGorrasAc .infoCardsGorrasAc p {
+          color: #FFFF;
+          padding: 0 15px;
+          font-size: 1em; }
 
 main .formulario {
   display: flex;
@@ -802,6 +802,62 @@ footer .derechosReservados {
         main .buzosAdultos .contenedorBuzosA .cardsBuzosA .infoCardsBuzoA {
           width: 250px; }
           main .buzosAdultos .contenedorBuzosA .cardsBuzosA .infoCardsBuzoA p {
+            font-size: 0.9em; }
+  main .mallasNinios {
+    height: 1000px; }
+    main .mallasNinios .contenedorMallasN {
+      height: 800px;
+      gap: 0px; }
+      main .mallasNinios .contenedorMallasN h2 {
+        bottom: 775px; }
+      main .mallasNinios .contenedorMallasN .cardsMallasN {
+        width: 250px;
+        height: 250px; }
+        main .mallasNinios .contenedorMallasN .cardsMallasN:hover {
+          width: 300px;
+          height: 450px; }
+        main .mallasNinios .contenedorMallasN .cardsMallasN .cardsEncabezadoMallasN {
+          width: 250px;
+          height: 250px; }
+          main .mallasNinios .contenedorMallasN .cardsMallasN .cardsEncabezadoMallasN img {
+            width: 185px;
+            height: 185px; }
+        main .mallasNinios .contenedorMallasN .cardsMallasN .cardsTituloMallasN {
+          width: 250px; }
+          main .mallasNinios .contenedorMallasN .cardsMallasN .cardsTituloMallasN h3 {
+            font-size: 0.9em;
+            margin: 10px 0 13px 0; }
+        main .mallasNinios .contenedorMallasN .cardsMallasN .infoCardsMallasN {
+          width: 250px; }
+          main .mallasNinios .contenedorMallasN .cardsMallasN .infoCardsMallasN p {
+            font-size: 0.9em; }
+  main .gorrasAc {
+    height: 1000px; }
+    main .gorrasAc .contenedorGorrasAc {
+      height: 800px;
+      gap: 0px; }
+      main .gorrasAc .contenedorGorrasAc h2 {
+        bottom: 775px; }
+      main .gorrasAc .contenedorGorrasAc .cardsGorrasAc {
+        width: 250px;
+        height: 250px; }
+        main .gorrasAc .contenedorGorrasAc .cardsGorrasAc:hover {
+          width: 300px;
+          height: 450px; }
+        main .gorrasAc .contenedorGorrasAc .cardsGorrasAc .cardsEncabezadoGorrasAc {
+          width: 250px;
+          height: 250px; }
+          main .gorrasAc .contenedorGorrasAc .cardsGorrasAc .cardsEncabezadoGorrasAc img {
+            width: 185px;
+            height: 185px; }
+        main .gorrasAc .contenedorGorrasAc .cardsGorrasAc .cardsTituloGorrasAc {
+          width: 250px; }
+          main .gorrasAc .contenedorGorrasAc .cardsGorrasAc .cardsTituloGorrasAc h3 {
+            font-size: 1em;
+            margin: 10px 0 13px 0; }
+        main .gorrasAc .contenedorGorrasAc .cardsGorrasAc .infoCardsGorrasAc {
+          width: 250px; }
+          main .gorrasAc .contenedorGorrasAc .cardsGorrasAc .infoCardsGorrasAc p {
             font-size: 0.9em; } }
 
 @media screen and (max-width: 1090px) {
@@ -814,34 +870,6 @@ footer .derechosReservados {
     font-size: 30px; } }
 
 @media screen and (max-width: 1075px) {
-  main .contenedorNinios {
-    height: 1700px; }
-  main .contenedorNinios .contenedorCardNGrid {
-    height: 1500px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: auto; }
-  main .contenedorNinios .contenedorCardNGrid .cardN3 {
-    grid-column: 1/2; }
-  main .contenedorNinios .contenedorCardNGrid .cardN4 {
-    grid-column: 2/3; }
-  main .contenedorNinios .contenedorCardNGrid .cardN5 {
-    grid-column: 1/2; }
-  main .contenedorNinios .contenedorCardNGrid .cardN6 {
-    grid-column: 2/3; }
-  main .contenedorAccesorios {
-    height: 1700px; }
-  main .contenedorAccesorios .contenedorCardAcGrid {
-    height: 1500px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: auto; }
-  main .contenedorAccesorios .contenedorCardAcGrid .cardAc3 {
-    grid-column: 1/2; }
-  main .contenedorAccesorios .contenedorCardAcGrid .cardAc4 {
-    grid-column: 2/3; }
-  main .contenedorAccesorios .contenedorCardAcGrid .cardAc5 {
-    grid-column: 1/2; }
-  main .contenedorAccesorios .contenedorCardAcGrid .cardAc6 {
-    grid-column: 2/3; }
   main .formulario .formularioPresentacion {
     width: 450px; }
   main .formulario .formularioContenedor {
@@ -913,6 +941,20 @@ footer .derechosReservados {
       grid-template-columns: repeat(2, 1fr);
       height: 1000px; }
       main .buzosAdultos .contenedorBuzosA h2 {
+        bottom: 975px; }
+  main .mallasNinios {
+    height: 1200px; }
+    main .mallasNinios .contenedorMallasN {
+      grid-template-columns: repeat(2, 1fr);
+      height: 1000px; }
+      main .mallasNinios .contenedorMallasN h2 {
+        bottom: 975px; }
+  main .gorrasAc {
+    height: 1200px; }
+    main .gorrasAc .contenedorGorrasAc {
+      grid-template-columns: repeat(2, 1fr);
+      height: 1000px; }
+      main .gorrasAc .contenedorGorrasAc h2 {
         bottom: 975px; } }
 
 @media screen and (max-width: 850px) {
@@ -937,22 +979,6 @@ footer .derechosReservados {
   main .formulario .formularioPresentacion .formularioPresentacionRedes .formularioPresentacionRedesIconos a img {
     width: 44px;
     height: 44px; }
-  main .contenedorNinios .contenedorCardNGrid div {
-    width: 300px;
-    height: 400px; }
-  main .contenedorNinios .contenedorCardNGrid div img {
-    width: 295px;
-    height: 240px; }
-  main .contenedorNinios .contenedorCardNGrid div p {
-    font-size: 12px; }
-  main .contenedorAccesorios .contenedorCardAcGrid div {
-    width: 300px;
-    height: 400px; }
-  main .contenedorAccesorios .contenedorCardAcGrid div img {
-    width: 295px;
-    height: 240px; }
-  main .contenedorAccesorios .contenedorCardAcGrid div p {
-    font-size: 12px; }
   footer .contenedorFooter .contenedorMapa iframe {
     width: 340px;
     height: 200px; }
@@ -1039,20 +1065,22 @@ footer .derechosReservados {
       main .buzosAdultos .contenedorBuzosA h2 {
         bottom: 1885px;
         left: 38%; }
-  main .contenedorNinios .contenedorCardNGrid div {
-    width: 250px;
-    height: 400px; }
-  main .contenedorNinios .contenedorCardNGrid div img {
-    width: 245px;
-    height: 240px; }
-  main .contenedorAccesorios .contenedorCardAcGrid div {
-    width: 250px;
-    height: 400px; }
-  main .contenedorAccesorios .contenedorCardAcGrid div h3 {
-    font-size: 16px; }
-  main .contenedorAccesorios .contenedorCardAcGrid div img {
-    width: 245px;
-    height: 240px; } }
+  main .mallasNinios {
+    height: 2100px; }
+    main .mallasNinios .contenedorMallasN {
+      grid-template-columns: 1fr;
+      height: 1900px; }
+      main .mallasNinios .contenedorMallasN h2 {
+        bottom: 1885px;
+        left: 38%; }
+  main .gorrasAc {
+    height: 2100px; }
+    main .gorrasAc .contenedorGorrasAc {
+      grid-template-columns: 1fr;
+      height: 1900px; }
+      main .gorrasAc .contenedorGorrasAc h2 {
+        bottom: 1885px;
+        left: 38%; } }
 
 @media screen and (max-width: 600px) {
   main .hero .heroContenedor .heroImg a img {
@@ -1068,28 +1096,6 @@ footer .derechosReservados {
     width: 480px; } }
 
 @media screen and (max-width: 550px) {
-  main .contenedorNinios .contenedorCardNGrid div {
-    width: 200px;
-    height: 350px; }
-  main .contenedorNinios .contenedorCardNGrid div h3 {
-    font-size: 10px;
-    height: 5%;
-    margin: 5px 0px; }
-  main .contenedorNinios .contenedorCardNGrid div p {
-    height: 25%; }
-  main .contenedorNinios .contenedorCardNGrid div img {
-    width: 198px;
-    height: 60%; }
-  main .contenedorNinios .contenedorCardNGrid div a {
-    height: 10%; }
-  main .contenedorAccesorios .contenedorCardAcGrid div {
-    width: 200px;
-    height: 350px; }
-  main .contenedorAccesorios .contenedorCardAcGrid div h3 {
-    font-size: 10px; }
-  main .contenedorAccesorios .contenedorCardAcGrid div img {
-    width: 198px;
-    height: 200px; }
   main .formulario .formularioPresentacion .formularioPresentacionImg {
     width: 200px;
     height: 200px; }
@@ -1131,40 +1137,8 @@ footer .derechosReservados {
     height: 470px; }
   main .hero .heroContenedor .heroTitulo h1 {
     font-size: 20px; }
-  main .contenedorNinios {
-    height: 2600px; }
-  main .contenedorNinios .contenedorCardNGrid {
-    height: 2350px;
-    grid-template-columns: 1fr; }
-  main .contenedorNinios .contenedorCardNGrid .cardN1 {
-    grid-column: 1/2; }
-  main .contenedorNinios .contenedorCardNGrid .cardN2 {
-    grid-column: 1/2; }
-  main .contenedorNinios .contenedorCardNGrid .cardN3 {
-    grid-column: 1/2; }
-  main .contenedorNinios .contenedorCardNGrid .cardN4 {
-    grid-column: 1/2; }
-  main .contenedorNinios .contenedorCardNGrid .cardN5 {
-    grid-column: 1/2; }
-  main .contenedorNinios .contenedorCardNGrid .cardN6 {
-    grid-column: 1/2; }
   main .contenedorAccesorios {
     height: 2600px; }
-  main .contenedorAccesorios .contenedorCardAcGrid {
-    height: 2350px;
-    grid-template-columns: 1fr; }
-  main .contenedorAccesorios .contenedorCardAcGrid .cardAc1 {
-    grid-column: 1/2; }
-  main .contenedorAccesorios .contenedorCardAcGrid .cardAc2 {
-    grid-column: 1/2; }
-  main .contenedorAccesorios .contenedorCardAcGrid .cardAc3 {
-    grid-column: 1/2; }
-  main .contenedorAccesorios .contenedorCardAcGrid .cardAc4 {
-    grid-column: 1/2; }
-  main .contenedorAccesorios .contenedorCardAcGrid .cardAc5 {
-    grid-column: 1/2; }
-  main .contenedorAccesorios .contenedorCardAcGrid .cardAc6 {
-    grid-column: 1/2; }
   main .formulario .formularioPresentacion {
     display: flex;
     justify-content: center;

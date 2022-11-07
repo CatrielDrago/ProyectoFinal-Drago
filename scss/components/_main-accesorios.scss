@@ -17,94 +17,90 @@ main{
             }
         }
     }
-    .contenedorAccesorios{
-        @include flex (flex, center, center, column);
-        @include tamanio (100%, 1400px);
-        background-color: #0000;
-        background-image: linear-gradient( rgba(0, 0, 0, 0.856), rgba(0, 0, 0, 0.753)), url(../img/patronnovedades.jpg); 
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-        .tituloCardAc{
-            @include flex (flex, center, center, row);
-            @include tamanio (100%, 100px);
-            position: absolute;
-            top: 50px;
-            h2{
-                text-transform: uppercase;
-                color: $color-secundario;
-                background-color: $color-cuaternario;
-                font-size: 45px;
-                padding: 10px 20px;
-                background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.212));
-            }
-        }
-        .contenedorCardAcGrid{
+    .gorrasAc{
+        @include flex (flex, center, center,row);
+        @include tamanio (100%, 1200px);
+        background-color:  #000;
+        .contenedorGorrasAc{
             display: grid;
-            @include tamanio (100%, 1200px);
-            grid-template-columns: repeat(3,1fr);
+            grid-template-columns: repeat(3, 1fr);
             grid-auto-rows: auto;
-            background-color: $color-cuaternario ;
-            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.212));
-            column-gap: 10px;
             justify-items: center;
             align-items: center;
-            div{
-                @include flex (flex, space-around, center, column);
-                background-color: $color-secundario;
-                border: map-get($cards, cardBorde);
-                width: map-get($cards, cardW);
-                height: map-get($cards, cardH);
-                box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-                -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-                -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-                background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.212));
-                transition: 1s linear;
+            gap: 15px;
+            @include tamanio (100%, 1000px);
+            background-color: $color-Terciario;
+            position: relative;
+            h2{
+                font-size: 2.5em;
+                position: absolute;
+                left: 45%;
+                bottom: 975px;
+                color:  $color-secundario;
+                background-color:  $color-Terciario;
+                text-transform: uppercase;
+                padding: 10px 20px;
+                border-radius: 10px;
+            }
+            .cardsGorrasAc{
+                @include flex (flex, space-between, center, column);
+                @include tamanio (350px, 350px);
+                background-color: rgba(255, 255, 255, 0.034);
+                overflow: hidden;
+                text-align: center;
+                transition: all .4s ease-in-out;
+                border: 1px solid $color-secundario;
+                border-radius: 10px;
+                box-shadow: 0 30px 30px 0 rgb(0, 0, 0);
                 &:hover{
-                    transform: scale(1.1);
+                    @include tamanio (400px, 550px);
                 }
-                img{
-                    @include tamanio (340px, 60%);
+                .cardsEncabezadoGorrasAc{
+                    @include tamanio (350px, 350px);
+                    padding: 25px 10px 0 7px;
+                    img{
+                        @include tamanio (285px, 285px);
+                        border-radius: 8px;
+                        border: 2px solid #000;
+                        box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.664);
+                    }
                 }
-                h3{
-                    text-transform: uppercase;
-                    font-size: 20px;
-                    color: $color-principal;
-                    height: 5%;
-                    margin: 5px 0px;
+                .cardsTituloGorrasAc{
+                    width: 300px;
+                    border-bottom: 2px solid $color-principal;
+                    h3{
+                        color: $color-principal;
+                        margin: 8px 0 8px 0;
+                        font-size: 1.2em;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        text-shadow: 2px 1px 0px rgba(0,0,0,0.43);
+                    }
                 }
-                p{
-                    padding: 0 20px;
-                    margin-bottom: 0;
-                    height: 25%;
+                .infoCardsGorrasAc{
+                    margin: 10px 0 10px 0;
+                    transition: all .5s ease-in-out;
+                        &:hover{
+                            transform: scale(1.1);
+                        }
+                    a{
+                        color:  $color-secundario;
+                        font-size: 1em;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        background-color: $color-principal;
+                        border-radius: 5px;
+                        border: 1px solid $color-secundario;
+                        padding: 5px 5px;
+                        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.911);
+                    }
+                    p{
+                        color: $color-secundario;
+                        padding: 0 15px;
+                        font-size: 1em;
+                    }
                 }
-                a{
-                    padding: 4px 20px;
-                    margin: 5px 0px;
-                    background-color: $color-principal;
-                    color: $color-secundario;
-                    border-radius: 8px;
-                    text-decoration: none;
-                    height: 10%;
-                }
-            }
-            .cardAc1{
-                grid-column: 1/2;
-            }
-            .cardAc2{
-                grid-column: 2/3;
-            }
-            .cardAc3{
-                grid-column: 3/4;
-            }
-            .cardAc4{
-                grid-column: 1/2;
-            }
-            .cardAc5{
-                grid-column: 2/3;
-            }
-            .cardAc6{
-                grid-column: 3/4;
             }
         }
     }
