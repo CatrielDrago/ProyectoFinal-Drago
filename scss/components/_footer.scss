@@ -44,11 +44,21 @@ footer{
                     }
                     .emailNewsletter{
                         @include tamanio (300px, 30px);
+                        color: #000;
+                        background: rgba(255, 255, 255, 0.3);
                         border-radius: 5px;
-                        
+                        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                        backdrop-filter: blur(10.7px);
+                        -webkit-backdrop-filter: blur(10.7px);
+                        border: 2px solid rgba(255, 255, 255, 0.3);
                         transition:all 0.5s ease-in-out;
                         &:hover{
                             transform: scale(1.1);
+                        }
+                        &::placeholder{
+                            color: rgba(0, 0, 0, 0.61);
+                            font-weight: bold;
+                            
                         }
                     }
                     .enviarNewsletter{

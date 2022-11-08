@@ -125,6 +125,8 @@ main .novedades {
     background-color: #464a4b93;
     position: relative; }
     main .novedades .novedadesContenedor h2 {
+      font-size: 2.5em;
+      font-weight: bold;
       position: absolute;
       bottom: 475px;
       left: 1%;
@@ -132,6 +134,7 @@ main .novedades {
       background-color: #464a4b93;
       padding: 10px 10px;
       text-transform: uppercase;
+      text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
       border-radius: 10px; }
     main .novedades .novedadesContenedor .cardsContenedorNov {
       display: flex;
@@ -140,13 +143,15 @@ main .novedades {
       flex-direction: column;
       width: 300px;
       height: 300px;
-      background-color: rgba(255, 255, 255, 0.034);
+      background: rgba(255, 255, 255, 0.09);
+      border-radius: 10px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(10.7px);
+      -webkit-backdrop-filter: blur(10.7px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
       overflow: hidden;
       text-align: center;
-      transition: all .4s ease-in-out;
-      border: 1px solid #FFFF;
-      border-radius: 10px;
-      box-shadow: 0px 30px 30px 0px black; }
+      transition: all .4s ease-in-out; }
       main .novedades .novedadesContenedor .cardsContenedorNov:hover {
         width: 300px;
         height: 450px; }
@@ -232,7 +237,7 @@ main .buzosAdultos {
       font-size: 2.5em;
       font-weight: bold;
       position: absolute;
-      left: 45%;
+      left: 1%;
       bottom: 975px;
       color: #FFFF;
       background-color: #464a4b93;
@@ -340,12 +345,14 @@ main .mallasNinios {
     position: relative; }
     main .mallasNinios .contenedorMallasN h2 {
       font-size: 2.5em;
+      font-weight: bold;
       position: absolute;
-      left: 45%;
+      left: 1%;
       bottom: 975px;
       color: #FFFF;
       background-color: #464a4b93;
       text-transform: uppercase;
+      text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
       padding: 10px 20px;
       border-radius: 10px; }
     main .mallasNinios .contenedorMallasN .cardsMallasN {
@@ -446,12 +453,14 @@ main .gorrasAc {
     position: relative; }
     main .gorrasAc .contenedorGorrasAc h2 {
       font-size: 2.5em;
+      font-weight: bold;
       position: absolute;
-      left: 45%;
+      left: 1%;
       bottom: 975px;
       color: #FFFF;
       background-color: #464a4b93;
       text-transform: uppercase;
+      text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
       padding: 10px 20px;
       border-radius: 10px; }
     main .gorrasAc .contenedorGorrasAc .cardsGorrasAc {
@@ -606,12 +615,12 @@ main .formulario {
           width: 250px;
           height: 30px;
           color: #000;
-          border: 2px solid #000;
+          background: rgba(255, 255, 255, 0.4);
           border-radius: 5px;
-          background-color: rgba(253, 250, 250, 0.726);
-          box-shadow: 0px 11px 17px 0px rgba(0, 0, 0, 0.61);
-          -webkit-box-shadow: 0px 11px 17px 0px rgba(0, 0, 0, 0.61);
-          -moz-box-shadow: 0px 11px 17px 0px rgba(0, 0, 0, 0.61); }
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(10.7px);
+          -webkit-backdrop-filter: blur(10.7px);
+          border: 2px solid rgba(2, 2, 2, 0.678); }
           main .formulario .formularioContenedor form .formularioNAE input::placeholder {
             color: rgba(0, 0, 0, 0.61);
             font-weight: bold;
@@ -657,10 +666,13 @@ main .formulario {
         main .formulario .formularioContenedor form .formularioMensaje textarea {
           width: 300px;
           height: 150px;
-          background-color: rgba(253, 250, 250, 0.726);
-          border: 2px solid black;
-          resize: none;
+          background: rgba(255, 255, 255, 0.4);
           border-radius: 10px;
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(10.7px);
+          -webkit-backdrop-filter: blur(10.7px);
+          border: 2px solid rgba(2, 2, 2, 0.678);
+          resize: none;
           padding: 5px; }
           main .formulario .formularioContenedor form .formularioMensaje textarea::placeholder {
             color: rgba(0, 0, 0, 0.61);
@@ -739,10 +751,19 @@ footer .contenedorFooter {
       footer .contenedorFooter .contenedorRedesNew .newsletter form .emailNewsletter {
         width: 300px;
         height: 30px;
+        color: #000;
+        background: rgba(255, 255, 255, 0.3);
         border-radius: 5px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10.7px);
+        -webkit-backdrop-filter: blur(10.7px);
+        border: 2px solid rgba(255, 255, 255, 0.3);
         transition: all 0.5s ease-in-out; }
         footer .contenedorFooter .contenedorRedesNew .newsletter form .emailNewsletter:hover {
           transform: scale(1.1); }
+        footer .contenedorFooter .contenedorRedesNew .newsletter form .emailNewsletter::placeholder {
+          color: rgba(0, 0, 0, 0.61);
+          font-weight: bold; }
       footer .contenedorFooter .contenedorRedesNew .newsletter form .enviarNewsletter {
         width: 100px;
         height: 30px;
@@ -975,23 +996,26 @@ footer .derechosReservados {
     height: 1200px; }
     main .buzosAdultos .contenedorBuzosA {
       grid-template-columns: repeat(2, 1fr);
-      height: 1000px; }
+      height: 1070px; }
       main .buzosAdultos .contenedorBuzosA h2 {
-        bottom: 975px; }
+        bottom: 1050px;
+        padding: 5px 20px; }
   main .mallasNinios {
     height: 1200px; }
     main .mallasNinios .contenedorMallasN {
       grid-template-columns: repeat(2, 1fr);
-      height: 1000px; }
+      height: 1070px; }
       main .mallasNinios .contenedorMallasN h2 {
-        bottom: 975px; }
+        bottom: 1050px;
+        padding: 5px 20px; }
   main .gorrasAc {
     height: 1200px; }
     main .gorrasAc .contenedorGorrasAc {
       grid-template-columns: repeat(2, 1fr);
-      height: 1000px; }
+      height: 1070px; }
       main .gorrasAc .contenedorGorrasAc h2 {
-        bottom: 975px; } }
+        bottom: 1050px;
+        padding: 5px 20px; } }
 
 @media screen and (max-width: 850px) {
   main .formulario .formularioPresentacion {
@@ -1099,24 +1123,21 @@ footer .derechosReservados {
       grid-template-columns: 1fr;
       height: 1900px; }
       main .buzosAdultos .contenedorBuzosA h2 {
-        bottom: 1885px;
-        left: 38%; }
+        bottom: 1885px; }
   main .mallasNinios {
     height: 2100px; }
     main .mallasNinios .contenedorMallasN {
       grid-template-columns: 1fr;
       height: 1900px; }
       main .mallasNinios .contenedorMallasN h2 {
-        bottom: 1885px;
-        left: 38%; }
+        bottom: 1885px; }
   main .gorrasAc {
     height: 2100px; }
     main .gorrasAc .contenedorGorrasAc {
       grid-template-columns: 1fr;
       height: 1900px; }
       main .gorrasAc .contenedorGorrasAc h2 {
-        bottom: 1885px;
-        left: 38%; } }
+        bottom: 1885px; } }
 
 @media screen and (max-width: 600px) {
   main .hero .heroContenedor .heroImg a img {

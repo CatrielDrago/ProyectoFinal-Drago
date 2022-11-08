@@ -102,6 +102,8 @@ main{
             background-color: $color-Terciario;
             position: relative;
             h2{
+                font-size: 2.5em;
+                font-weight: bold;
                 position: absolute;
                 bottom: 475px;
                 left: 1%;
@@ -109,18 +111,21 @@ main{
                 background-color: $color-Terciario;
                 padding: 10px 10px;
                 text-transform: uppercase;
+                text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
                 border-radius: 10px;
             }
             .cardsContenedorNov{
                 @include flex (flex, space-between, center, column);
                 @include tamanio (300px, 300px);
-                background-color: rgba(255, 255, 255, 0.034);
+                background: rgba(255, 255, 255, 0.09);
+                border-radius: 10px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(10.7px);
+                -webkit-backdrop-filter: blur(10.7px);
+                border: 1px solid rgba(255, 255, 255, 0.3);
                 overflow: hidden;
                 text-align: center;
                 transition: all .4s ease-in-out;
-                border: 1px solid $color-secundario;
-                border-radius: 10px;
-                box-shadow: 0px 30px 30px 0px rgb(0, 0, 0);
                 &:hover{
                     @include tamanio (300px, 450px)
                 }

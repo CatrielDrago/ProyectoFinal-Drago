@@ -70,12 +70,12 @@ main{
                     input{
                         @include tamanio (250px, 30px);
                         color: #000;
-                        border: 2px solid #000;
+                        background: rgba(255, 255, 255, 0.4);
                         border-radius: 5px;
-                        background-color: rgba(253, 250, 250, 0.726);
-                        box-shadow: 0px 11px 17px 0px rgba(0,0,0,0.61);
-                        -webkit-box-shadow: 0px 11px 17px 0px rgba(0,0,0,0.61);
-                        -moz-box-shadow: 0px 11px 17px 0px rgba(0,0,0,0.61);
+                        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                        backdrop-filter: blur(10.7px);
+                        -webkit-backdrop-filter: blur(10.7px);
+                        border: 2px solid rgba(2, 2, 2, 0.678);
                         &::placeholder{
                             color: rgba(0, 0, 0, 0.61);
                             font-weight: bold;
@@ -117,11 +117,14 @@ main{
                         margin-bottom: 15px;
                     }
                     textarea{
-                        @include tamanio (300px, 150px); 
-                        background-color: rgba(253, 250, 250, 0.726);
-                        border: 2px solid black;
-                        resize: none;
+                        @include tamanio (300px, 150px);
+                        background: rgba(255, 255, 255, 0.4);
                         border-radius: 10px;
+                        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                        backdrop-filter: blur(10.7px);
+                        -webkit-backdrop-filter: blur(10.7px);
+                        border: 2px solid rgba(2, 2, 2, 0.678); 
+                        resize: none;
                         padding: 5px;
                         &::placeholder{
                             color: rgba(0, 0, 0, 0.61);
