@@ -2,7 +2,7 @@ main{
     .anuncioDeEstacionVerano{
         @include flex (flex, center, center,row);
         @include tamanio (100%, calc(100vh - 100px));
-        background-image:linear-gradient( rgba(0, 0, 0, 0.233), rgba(3, 0, 0, 0.137)), url(../img/verano.jpg);
+        background-image:radial-gradient(circle, #00050dc2, #03030aad, #0000008a, #0301028a, #000000a8), url(../img/niñosh.jpg);
         background-size:cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -10,6 +10,8 @@ main{
         .contenedorAnuncioDeEstacionVerano{
             h1{
                 font-size: 56px;
+                font-weight: bold;
+                text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
                 color: $color-secundario;
                 text-transform: uppercase;
             }
@@ -43,13 +45,15 @@ main{
             .cardsMallasN{
                 @include flex (flex, space-between, center, column);
                 @include tamanio (350px, 350px);
-                background-color: rgba(255, 255, 255, 0.034);
+                background: rgba(255, 255, 255, 0.09);
+                border-radius: 16px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(10.7px);
+                -webkit-backdrop-filter: blur(10.7px);
+                border: 1px solid rgba(255, 255, 255, 0.3);
                 overflow: hidden;
                 text-align: center;
                 transition: all .4s ease-in-out;
-                border: 1px solid $color-secundario;
-                border-radius: 10px;
-                box-shadow: 0 30px 30px 0 rgb(0, 0, 0);
                 &:hover{
                     @include tamanio (400px, 550px);
                 }

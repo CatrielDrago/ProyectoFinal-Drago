@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Passion+One:wght@400;700;900&display=swap");
 * {
   margin: 0;
@@ -196,13 +197,15 @@ main .anuncioDeEstacionInvierno {
   flex-direction: row;
   width: 100%;
   height: calc(100vh - 100px);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.233), rgba(3, 0, 0, 0.137)), url(../img/invierno.jpg);
+  background-image: radial-gradient(circle, #00050dc2, #03030aad, #0000008a, #0301028a, #000000a8), url(../img/adultosh.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   border-bottom: 1px solid #FFFF; }
   main .anuncioDeEstacionInvierno .contenedorAnuncioDeEstacionInvierno h1 {
     font-size: 56px;
+    font-weight: bold;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
     color: #FFFF;
     text-transform: uppercase; }
 
@@ -227,12 +230,14 @@ main .buzosAdultos {
     position: relative; }
     main .buzosAdultos .contenedorBuzosA h2 {
       font-size: 2.5em;
+      font-weight: bold;
       position: absolute;
       left: 45%;
       bottom: 975px;
       color: #FFFF;
       background-color: #464a4b93;
       text-transform: uppercase;
+      text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
       padding: 10px 20px;
       border-radius: 10px; }
     main .buzosAdultos .contenedorBuzosA .cardsBuzosA {
@@ -242,13 +247,15 @@ main .buzosAdultos {
       flex-direction: column;
       width: 350px;
       height: 350px;
-      background-color: rgba(255, 255, 255, 0.034);
+      background: rgba(255, 255, 255, 0.09);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(10.7px);
+      -webkit-backdrop-filter: blur(10.7px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
       overflow: hidden;
       text-align: center;
-      transition: all .4s ease-in-out;
-      border: 1px solid #FFFF;
-      border-radius: 10px;
-      box-shadow: 0 30px 30px 0 black; }
+      transition: all .4s ease-in-out; }
       main .buzosAdultos .contenedorBuzosA .cardsBuzosA:hover {
         width: 400px;
         height: 550px; }
@@ -300,13 +307,15 @@ main .anuncioDeEstacionVerano {
   flex-direction: row;
   width: 100%;
   height: calc(100vh - 100px);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.233), rgba(3, 0, 0, 0.137)), url(../img/verano.jpg);
+  background-image: radial-gradient(circle, #00050dc2, #03030aad, #0000008a, #0301028a, #000000a8), url(../img/niñosh.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   border-bottom: 1px solid #FFFF; }
   main .anuncioDeEstacionVerano .contenedorAnuncioDeEstacionVerano h1 {
     font-size: 56px;
+    font-weight: bold;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
     color: #FFFF;
     text-transform: uppercase; }
 
@@ -346,13 +355,15 @@ main .mallasNinios {
       flex-direction: column;
       width: 350px;
       height: 350px;
-      background-color: rgba(255, 255, 255, 0.034);
+      background: rgba(255, 255, 255, 0.09);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(10.7px);
+      -webkit-backdrop-filter: blur(10.7px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
       overflow: hidden;
       text-align: center;
-      transition: all .4s ease-in-out;
-      border: 1px solid #FFFF;
-      border-radius: 10px;
-      box-shadow: 0 30px 30px 0 black; }
+      transition: all .4s ease-in-out; }
       main .mallasNinios .contenedorMallasN .cardsMallasN:hover {
         width: 400px;
         height: 550px; }
@@ -450,13 +461,15 @@ main .gorrasAc {
       flex-direction: column;
       width: 350px;
       height: 350px;
-      background-color: rgba(255, 255, 255, 0.034);
+      background: rgba(255, 255, 255, 0.09);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(10.7px);
+      -webkit-backdrop-filter: blur(10.7px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
       overflow: hidden;
       text-align: center;
-      transition: all .4s ease-in-out;
-      border: 1px solid #FFFF;
-      border-radius: 10px;
-      box-shadow: 0 30px 30px 0 black; }
+      transition: all .4s ease-in-out; }
       main .gorrasAc .contenedorGorrasAc .cardsGorrasAc:hover {
         width: 400px;
         height: 550px; }
@@ -690,14 +703,18 @@ footer .contenedorFooter {
     footer .contenedorFooter .contenedorMapa h2 {
       color: #0275d8;
       text-transform: uppercase;
-      font-size: 30px; }
+      font-size: 30px;
+      font-weight: bold;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.438); }
     footer .contenedorFooter .contenedorMapa iframe {
       width: 400px;
-      height: 300px; }
+      height: 300px;
+      border-radius: 5px; }
     footer .contenedorFooter .contenedorMapa p {
       color: #0275d8;
       text-transform: uppercase;
-      font-size: 15px; }
+      font-size: 15px;
+      margin: 5px 0px; }
   footer .contenedorFooter .contenedorRedesNew {
     display: flex;
     justify-content: center;
@@ -716,16 +733,27 @@ footer .contenedorFooter {
         color: #0275d8;
         text-transform: uppercase;
         font-size: 30px;
+        font-weight: bold;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.438);
         margin-bottom: 10px; }
       footer .contenedorFooter .contenedorRedesNew .newsletter form .emailNewsletter {
         width: 300px;
-        height: 30px; }
+        height: 30px;
+        border-radius: 5px;
+        transition: all 0.5s ease-in-out; }
+        footer .contenedorFooter .contenedorRedesNew .newsletter form .emailNewsletter:hover {
+          transform: scale(1.1); }
       footer .contenedorFooter .contenedorRedesNew .newsletter form .enviarNewsletter {
         width: 100px;
         height: 30px;
         background-color: #0275d8;
         color: #FFFF;
-        margin-top: 30px; }
+        margin-top: 30px;
+        border-radius: 10px;
+        border: 2px solid rgba(255, 255, 255, 0.438);
+        transition: all 0.5s ease-in-out; }
+        footer .contenedorFooter .contenedorRedesNew .newsletter form .enviarNewsletter:hover {
+          transform: scale(1.1); }
     footer .contenedorFooter .contenedorRedesNew .redesSociales {
       display: flex;
       justify-content: center;
@@ -736,13 +764,15 @@ footer .contenedorFooter {
       footer .contenedorFooter .contenedorRedesNew .redesSociales h2 {
         color: #0275d8;
         text-transform: uppercase;
+        font-weight: bold;
         font-size: 30px;
-        margin-bottom: 10px; }
+        margin-bottom: 15px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.438); }
       footer .contenedorFooter .contenedorRedesNew .redesSociales .iconosFooter a img {
         width: 54px;
         height: 54px;
         margin-left: 20px;
-        transition: 1s linear; }
+        transition: all 0.5s ease-in-out; }
         footer .contenedorFooter .contenedorRedesNew .redesSociales .iconosFooter a img:hover {
           transform: scale(1.2); }
 
