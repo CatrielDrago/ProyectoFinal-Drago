@@ -135,66 +135,74 @@
 }
 
 @media screen and (max-width: 1090px){
-    main .hero .heroContenedor .heroImg a img{
-        height: 285px;
-        padding-bottom: 10px;
-    }
-    main .hero .heroContenedor{
-        height: 470px;
-    }
-    main .hero .heroContenedor .heroTitulo h1{
-        font-size: 30px;
+    main{
+        .hero{
+            .heroContenedor{
+                height: 470px;
+                .heroImg{
+                    a{
+                        img{
+                            height: 285px;
+                            padding-bottom: 10px;
+                        }
+                    }
+                }
+                .heroTitulo{
+                    h1{
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
     }
 }
 
 @media screen and (max-width: 1075px) {
-    main .formulario .formularioPresentacion{
-        width: 450px;
+    main{
+        .formulario{
+            .formularioPresentacion{
+                width: 450px;
+            }
+            .formularioContenedor{
+                width: 430px;
+                form{
+                    width: 430px;
+                    .formularioNAE{
+                        width: 350px;
+                    }
+                    .formularioSexo{
+                        width: 350px;
+                    }
+                    .formularioMensaje{
+                        width: 350px;
+                    }
+                }
+            }
+        }
     }
-
-    main .formulario .formularioContenedor{
-        width: 430px;
-    }
-
-    main .formulario .formularioContenedor form{
-        width: 430px;
-    }
-
-    main .formulario .formularioContenedor form .formularioNAE{
-        width: 350px
-    }
-
-    main .formulario .formularioContenedor form
-.formularioSexo{
-    width: 350px;
-}
-
-main .formulario .formularioContenedor form .formularioMensaje{
-    width: 350px;
-}
-
-footer .contenedorFooter .contenedorMapa{
-    width: 50%;
-}
-
-    footer .contenedorFooter .contenedorMapa iframe{
-        width: 350px;
-    }
-
-    footer .contenedorFooter .contenedorMapa h2{
-        font-size: 26px;
-    }
-
-    footer .contenedorFooter .contenedorRedesNew{
-        width: 500px;
-    }
-
-    footer .contenedorFooter .contenedorRedesNew .newsletter form{
-        width: 500px;
-    }
-
-    footer .contenedorFooter .contenedorRedesNew .redesSociales{
-        width: 500px;
+    footer{
+        .contenedorFooter{
+            .contenedorMapa{
+                width: 50%;
+                iframe{
+                    width: 350px;
+                }
+                h2{
+                    font-size: 26px;
+                }
+            }
+            .contenedorRedesNew{
+                width: 500px;
+                .newsletter{
+                    form{
+                        width: 500px;
+                    }
+                }
+                .redesSociales{
+                    width: 500px;
+                }
+            }
+        }
     }
 }
 
@@ -216,51 +224,54 @@ footer .contenedorFooter .contenedorMapa{
                 }
             }
         }
+        .tiendaContenedor{
+            .tiendaImg1{
+                width: 650px;
+            }
+            .tiendaImg2{
+                width: 650px;
+            }
+        }
+        .formulario{
+            .formularioPresentacion{
+                width: 380px;
+                .formularioPresentacionRedes{
+                    width: 350px;
+                    .formularioPresentacionRedesIconos{
+                        width: 350px;
+                    }
+                }
+            }
+            .formularioContenedor{
+                width: 380px;
+                form{
+                    width: 380px;
+                }
+            }
+        }
     }
-    main .tiendaContenedor .tiendaImg1{
-        width: 650px;
-    }
-    
-    main .tiendaContenedor .tiendaImg2{
-        width: 650px;
-    }
-
-    main .formulario .formularioPresentacion{
-        width: 380px;
-    }  
-    main .formulario .formularioPresentacion .formularioPresentacionRedes{
-        width: 350px;
-    }
-    main .formulario .formularioPresentacion .formularioPresentacionRedes .formularioPresentacionRedesIconos{
-        width: 350px;
-    }
-
-    main .formulario .formularioContenedor{
-        width: 380px;
-    }
-
-    main .formulario .formularioContenedor form{
-        width: 380px;
-    }
-
-    footer .contenedorFooter .contenedorMapa iframe{
-        width: 340px;
-    }
-
-    footer .contenedorFooter .contenedorMapa h2{
-        font-size: 24px;
-    }
-
-    footer .contenedorFooter .contenedorRedesNew{
-        width: 450px;
-    }
-
-    footer .contenedorFooter .contenedorRedesNew .newsletter form{
-        width: 450px;
-    }
-
-    footer .contenedorFooter .contenedorRedesNew .redesSociales{
-        width: 450px;
+    footer{
+        .contenedorFooter{
+            .contenedorMapa{
+                iframe{
+                    width: 340px;
+                }
+                h2{
+                    font-size: 24px;
+                }
+            }
+            .contenedorRedesNew{
+                width: 450px;
+                .newsletter{
+                    form{
+                        width: 450px;
+                    }
+                }
+                .redesSociales{
+                    width: 450px;
+                }
+            }
+        }
     }
 }
 
@@ -300,59 +311,76 @@ footer .contenedorFooter .contenedorMapa{
 }
 
 @media screen and (max-width: 850px) {
-    main .formulario .formularioPresentacion{
-        width: 300px;
-    } 
-    
-    main .formulario .formularioPresentacion .formularioPresentacionImg{
-        @include tamanio (250px, 250px);
+    main{
+        .formulario{
+            .formularioPresentacion{
+                width: 300px;
+                .formularioPresentacionImg{
+                    @include tamanio (250px, 200px);
+                    img{
+                        @include tamanio (200px, 200px);
+                    }
+                }
+                .formularioPresentacionRedes{
+                    width: 280px;
+                    h2{
+                        font-size: 26px;
+                    }
+                    .formularioPresentacionRedesIconos{
+                        width: 280px;
+                        @include flex (flex, center, center, column);
+                        a{
+                            img{
+                                @include tamanio (44px, 44px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
-    main .formulario .formularioPresentacion .formularioPresentacionImg img{
-        @include tamanio (200px, 200px);
-    }
-
-    main .formulario .formularioPresentacion .formularioPresentacionRedes{
-        width: 280px;
-    }
-
-    main .formulario .formularioPresentacion .formularioPresentacionRedes h2{
-        font-size: 26px;
-
-    }
-
-    main .formulario .formularioPresentacion .formularioPresentacionRedes .formularioPresentacionRedesIconos{
-        width: 280px;
-        @include flex (flex, center, center, column);
-    }
-
-    main .formulario .formularioPresentacion .formularioPresentacionRedes .formularioPresentacionRedesIconos a img{
-        @include tamanio (44px, 44px);
-    }
-
-    footer .contenedorFooter .contenedorMapa iframe{
-        @include tamanio (340px, 200px);
-    }
-
-    footer .contenedorFooter .contenedorRedesNew{
-        width: 350px;
-    }
-
-    footer .contenedorFooter .contenedorRedesNew .newsletter form{
-        width: 350px;
-    }
-
-    footer .contenedorFooter .contenedorRedesNew .redesSociales{
-        width: 350px;
-    }
-
-    footer .contenedorFooter .contenedorRedesNew .redesSociales .iconosFooter a img{
-        margin-left: 5px;
+    footer{
+        .contenedorFooter{
+            .contenedorMapa{
+                iframe{
+                    @include tamanio (340px, 200px);
+                }
+            }
+            .contenedorRedesNew{
+                width: 350px;
+                .newsletter{
+                    form{
+                        width: 350px;
+                    }
+                }
+                .redesSociales{
+                    width: 350px;
+                    .iconosFooter{
+                        a{
+                            img{
+                                margin-left: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
 @media screen and (max-width: 800px){
-    footer .contenedorFooter .contenedorRedesNew .newsletter form .emailNewsletter{
-        width: 200px;
+    footer{
+        .contenedorFooter{
+            .contenedorRedesNew{
+                .newsletter{
+                    form{
+                        .emailNewsletter{
+                            width: 200px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -368,82 +396,84 @@ footer .contenedorFooter .contenedorMapa{
                 }
             }
         }
+        .formulario{
+            .formularioContenedor{
+                width: 55%;
+            }
+            .formularioPresentacion{
+                width: 44%;
+                .formularioPresentacionRedes{
+                    .formularioPresentacionRedesIconos{
+                        width: 200px;
+                    }
+                }
+            }
+        }
     }
-    main .formulario .formularioContenedor{
-        width: 55%;
-    }
-
-    main .formulario .formularioPresentacion{
-        width: 40%;
-    }
-
-    main .formulario .formularioPresentacion .formularioPresentacionRedes .formularioPresentacionRedesIconos{
-        width: 200px;
-    }
-
-    footer .contenedorFooter .contenedorMapa iframe{
-        @include tamanio (280px, 200px);
-    }
-
-    footer .contenedorFooter .contenedorMapa h2{
-        font-size: 22px;
+    footer{
+        .contenedorFooter{
+            .contenedorMapa{
+                iframe{
+                    @include tamanio (280px, 200px);
+                }
+                h2{
+                    font-size: 22px
+                }
+            }
+        }
     }
 }
 
 @media screen and (max-width: 700px){
-    main .tiendaContenedor .tiendaImg1{
-        width: 600px;
-        
+    main{
+        .tiendaContenedor{
+            .tiendaImg1{
+                width: 600px;
+            }
+            .tiendaImg2{
+                width: 600px;
+            }
+        }
+        .formulario{
+            height: 1300px;
+            flex-direction: column;
+            .formularioPresentacion{
+                flex-direction: row;
+                @include tamanio (95%, 300px);
+                .formularioPresentacionImg{
+                    @include tamanio (250px, 200px);
+                    img{
+                        @include tamanio (200px, 200px);
+                    }
+                }
+                .formularioPresentacionRedes{
+                    width: 280px;
+                    justify-content: center;
+                    h2{
+                        font-size: 28px;
+                        margin-bottom: 5px;
+                    }
+                    .formularioPresentacionRedesIconos{
+                        @include flex (flex, center, center, row);
+                        @include tamanio (200px, 100px);
+                        a{
+                            img{
+                                @include tamanio (44px, 44px);
+                            }
+                        }
+                    }
+                }
+            }
+            .formularioContenedor{
+                width: 95%;
+            }
+        }
     }
-    
-    main .tiendaContenedor .tiendaImg2{
-        width: 600px;
-    } 
-
-    main .formulario{
-        height: 1300px;
-        flex-direction: column;
-    }
-
-    main .formulario .formularioPresentacion{
-        flex-direction: row;
-        width: 95%;
-        height: 300px;
-    } 
-    
-    main .formulario .formularioPresentacion .formularioPresentacionImg{
-        @include tamanio (250px, 250px);
-    }
-    main .formulario .formularioPresentacion .formularioPresentacionImg img{
-        @include tamanio (200px, 200px);
-    }
-
-    main .formulario .formularioPresentacion .formularioPresentacionRedes{
-        width: 280px;
-        justify-content: center;
-    }
-
-    main .formulario .formularioPresentacion .formularioPresentacionRedes h2{
-        font-size: 28px;
-        margin-bottom: 5px;
-    }
-
-    main .formulario .formularioPresentacion .formularioPresentacionRedes .formularioPresentacionRedesIconos{
-        @include flex (flex, center, center, row);
-        @include tamanio (200px, 100px);
-    }
-
-    main .formulario .formularioPresentacion .formularioPresentacionRedes .formularioPresentacionRedesIconos a img{
-        @include tamanio (44px, 44px);
-    }
-
-    main .formulario .formularioContenedor{
-        width: 95%;
-    }
-
-    footer .contenedorFooter{
-        @include tamanio (100%, 800px);
-        flex-direction: column;
+    footer{
+        .contenedorFooter{
+            @include tamanio (100%, 800px);
+            flex-direction: column;
+        }
     }
 }
 
@@ -486,132 +516,155 @@ footer .contenedorFooter .contenedorMapa{
 }
 
 @media screen and (max-width: 600px){
-    main .hero .heroContenedor .heroImg a img{
-        height: 250px;
-    }
-    main .hero .heroContenedor .heroTitulo h1{
-        font-size: 25px;
-    }
-    main .hero .heroContenedor .heroTitulo .heroLinks a{
-        font-size: 14px;
-    }
-    main .tiendaContenedor .tiendaImg1{
-        width: 480px;
-        align-items: center;
-    }
-    
-    main .tiendaContenedor .tiendaImg2{
-        width: 480px;
+    main{
+        .hero{
+            .heroContenedor{
+                .heroImg{
+                    a{
+                        img{
+                            height: 250px;
+                        }
+                    }
+                }
+                .heroTitulo{
+                    h1{
+                        font-size: 25px;
+                    }
+                    .heroLinks{
+                        a{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+        .tiendaContenedor{
+            .tiendaImg1{
+                width: 480px;
+                align-items: center;
+            }
+            .tiendaImg2{
+                width: 480px;
+                align-items: center;
+            }
+        }
     }
 }
 
 
 @media screen and (max-width: 550px){
-    main .formulario .formularioPresentacion .formularioPresentacionImg{
-        @include tamanio (200px, 200px);
+    main{
+        .formulario{
+            .formularioPresentacion{
+                .formularioPresentacionImg{
+                    @include tamanio (200px, 150px);
+                    img{
+                        @include tamanio (150px, 150px);
+                    }
+                }
+            }
+        }
     }
-    main .formulario .formularioPresentacion .formularioPresentacionImg  img{
-        @include tamanio (150px, 150px);
-    }
-
-    footer .contenedorFooter .contenedorMapa{
-        width: 100%;
-    }
-
-    footer .contenedorFooter .contenedorMapa h2{
-        font-size: 18px;
+    footer{
+        .contenedorFooter{
+            .contenedorMapa{
+                width: 100%;
+                h2{
+                    font-size: 24px;
+                }
+            }
+        }
     }
 }
 
 @media screen and (max-width: 500px){
-    main .tiendaContenedor{
-        flex-direction: row;
-        padding: 5px;
-        gap: 5px;
-
-    }
-    
-    main .tiendaContenedor .tiendaImg1{
-        @include tamanio (50%, 480px);
-    }
-
-    main .tiendaContenedor .tiendaImg1 h2{
-        font-size: 22px;
-    }
-
-    main .tiendaContenedor .tiendaImg2{
-        @include tamanio (50%, 480px);
-        width: 50%;
-        height: 480px;
-    }
-
-    main .tiendaContenedor .tiendaImg2 h2{
-        font-size: 22px;
-    }
-
-    main .formulario .formularioContenedor form{
-        width: 98%;
-    }
-
-    main .formulario .formularioContenedor form .formularioNAE{
-        width: 95%;
-    }
-
-    main .formulario .formularioContenedor form .formularioNAE label{
-        font-size: 16px;
-        margin-right: 10px;
+    main{
+        .tiendaContenedor{
+            flex-direction: row;
+            padding: 5px;
+            gap: 5px;
+            .tiendaImg1{
+                @include tamanio (50%, 480px);
+                h2{
+                    font-size: 24px;
+                    font-weight: bold;
+                }
+            }
+            .tiendaImg2{
+                @include tamanio (50%, 480px);
+                h2{
+                    font-size: 24px;
+                    font-weight: bold;
+                }
+            }
+        }
+        .formulario{
+            .formularioContenedor{
+                form{
+                    width: 98%;
+                    .formularioNAE{
+                        width: 95%;
+                    }
+                }
+            }
+        }
     }
 }
-
 @media screen and (max-width: 450px){
-    main .hero .heroContenedor{
-        height: 470px;
-    }
-    main .hero .heroContenedor .heroTitulo h1{
-        font-size: 20px;
-    }
-    main .contenedorAccesorios{
-        height: 2600px;
-    }
-
-    main .formulario .formularioPresentacion {
-        @include flex (flex, center, center, column);
-    }
-
-    main .formulario .formularioPresentacion .formularioPresentacionImg{
-        @include tamanio (140px, 140px);
-    }
-    main .formulario .formularioPresentacion .formularioPresentacionImg img{
-        @include tamanio (100px, 120px);
-    }
-
-    main .formulario .formularioPresentacion .formularioPresentacionRedes{
-        height: 40%;
-    }
-
-    main .formulario .formularioPresentacion .formularioPresentacionRedes h2{
-        font-size: 24px;
-        margin-bottom: 5px;
-    }
-
-    main .formulario .formularioPresentacion .formularioPresentacionRedes .formularioPresentacionRedesIconos{
-        @include tamanio (150px, 64px);
-    }
-
-    main .formulario .formularioPresentacion .formularioPresentacionRedes .formularioPresentacionRedesIconos a img{
-        @include tamanio (34px, 34px);
-    }
-    
-    main .formulario .formularioPresentacion .formularioPresentacionRedes .formularioPresentacionRedesIconos a{
-        margin: 0 5px 0 0;
+    main{
+        .hero{
+            .heroContenedor{
+                height: 470px;
+                .heroTitulo{
+                    h1{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        .formulario{
+            .formularioPresentacion{
+                @include flex (flex, center, center, column);
+                .formularioPresentacionImg{
+                    @include tamanio (140px, 120px);
+                    img{
+                        @include tamanio (100px, 120px);
+                    }
+                }
+                .formularioPresentacionRedes{
+                    height: 40%;
+                    h2{
+                        font-size: 24px;
+                        margin-bottom: 5px;
+                    }
+                    .formularioPresentacionRedesIconos{
+                        @include tamanio (150px, 64px);
+                        a{
+                            margin: 0 5px 0 0;
+                            img{
+                                @include tamanio (34px, 34px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
 @media screen and (max-width: 400px){
-    main .hero .heroContenedor .heroTitulo .heroLinks a{
-        font-size: 12px ;
-    }
     main{
+        .hero{
+            .heroContenedor{
+                .heroTitulo{
+                    .heroLinks{
+                        a{
+                            font-size: 12px
+                        }
+                    }
+                }
+            }
+        }
         .novedades{
             .novedadesContenedor{
                 .cardsContenedorNov{
@@ -628,22 +681,17 @@ footer .contenedorFooter .contenedorMapa{
                 }
             }
         }
+        .formulario{
+            .formularioContenedor{
+                form{
+                    .formularioSexo{
+                        width: 90%;
+                    }
+                    .formularioMensaje{
+                        width: 90%;
+                    }
+                }
+            }
+        }
     }
-    
-    main .formulario .formularioContenedor form .formularioNAE input{
-        @include tamanio (200px, 25px);
-    }
-
-    main .formulario .formularioContenedor form .formularioSexo{
-        width: 90%;
-    }
-
-    main .formulario .formularioContenedor form .formularioSexo .formularioSexoOpciones label{
-        font-size: 16px;
-    }
-
-    main .formulario .formularioContenedor form .formularioMensaje{
-        width: 90%;
-    }
-
 }
