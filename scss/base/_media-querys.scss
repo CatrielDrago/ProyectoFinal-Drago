@@ -2,6 +2,14 @@
 
 @media screen and (max-width: 1270px){
     main{
+        .formulario{
+            .formularioPresentacion{
+                @include tamanio (42%, 800px);
+            }
+            .formularioContenedor{
+                @include tamanio (52%, 800px);
+            }
+        }
         .novedades{
             height: 1400px;
             .novedadesContenedor{
@@ -317,7 +325,7 @@
     main{
         .formulario{
             .formularioPresentacion{
-                width: 300px;
+                width: 350px;
                 .formularioPresentacionImg{
                     @include tamanio (250px, 200px);
                     img{

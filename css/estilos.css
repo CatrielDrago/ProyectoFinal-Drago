@@ -812,6 +812,12 @@ footer .derechosReservados {
     margin: 0px; }
 
 @media screen and (max-width: 1270px) {
+  main .formulario .formularioPresentacion {
+    width: 42%;
+    height: 800px; }
+  main .formulario .formularioContenedor {
+    width: 52%;
+    height: 800px; }
   main .novedades {
     height: 1400px; }
     main .novedades .novedadesContenedor {
@@ -1019,7 +1025,7 @@ footer .derechosReservados {
 
 @media screen and (max-width: 850px) {
   main .formulario .formularioPresentacion {
-    width: 300px; }
+    width: 350px; }
     main .formulario .formularioPresentacion .formularioPresentacionImg {
       width: 250px;
       height: 200px; }
